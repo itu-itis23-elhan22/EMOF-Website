@@ -4,64 +4,153 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 
 export default function Hero() {
-  const images = [
-    "/cizg.png",  // 1. çizim görüntü
-    "/realucak.png",     // 2. gerçek fotoğraf
+  // Animasyon aşamaları
+  const [stage, setStage] = useState(0);
+  const [showText, setShowText] = useState(false);
+
+  // Uçak çizim aşamaları
+  const planeStages = [
+    { src: "/1.png", duration: 1500 },  // 1. basit çizim
+    { src: "/2.png", duration: 1500 },  // 2. daha detaylı
+    { src: "/3.png", duration: 1500 },  // 3. en detaylı çizim
+    { src: "/4.png", duration: 2000 },  // 4. yarı gerçek
+    { src: "/5.png", duration: 3000 },  // 5. gerçek fotoğraf
   ];
 
-  const [current, setCurrent] = useState(0);
-
   useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrent((prev) => (prev + 1) % images.length);
-    }, 3000); // 3 saniyede bir geçiş
+    // İlk yükleme gecikmesi
+    const initialDelay = setTimeout(() => {
+      setStage(0);
+    }, 300);
 
-    return () => clearInterval(interval);
+    return () => clearTimeout(initialDelay);
   }, []);
 
+  useEffect(() => {
+    if (stage < planeStages.length - 1) {
+      const timer = setTimeout(() => {
+        setStage(stage + 1);
+      }, planeStages[stage].duration);
+
+      return () => clearTimeout(timer);
+    } else if (stage === planeStages.length - 1) {
+      // Uçak tamamlandıktan sonra yazıları göster
+      const textTimer = setTimeout(() => {
+        setShowText(true);
+      }, 800);
+
+      return () => clearTimeout(textTimer);
+    }
+  }, [stage]);
+
   return (
-    <section className="relative h-[85vh] w-full bg-gradient-to-b from-slate-900 via-slate-800 to-slate-900 overflow-hidden">
-
-      {/* BACKGROUND CLOUDS (opsiyonel) */}
-      <div className="absolute inset-0 bg-[url('/clouds-bg.jpg')] bg-cover bg-center opacity-20"></div>
-
-      {/* IMAGE FADE LAYER */}
-      <div className="absolute inset-0">
-        {images.map((img, index) => (
-          <Image
-            key={img}
-            src={img}
-            alt="airplane"
-            fill
-            className={`
-              object-contain transition-opacity duration-[2500ms]
-              ${index === current ? "opacity-100" : "opacity-0"}
-            `}
-            priority
-          />
-        ))}
+    <section className="relative h-screen w-full bg-gradient-to-br from-slate-950 via-slate-900 to-blue-950 overflow-hidden">
+      
+      {/* Animated Background Particles */}
+      <div className="absolute inset-0 opacity-30">
+        <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-blue-400 rounded-full animate-pulse"></div>
+        <div className="absolute top-1/3 right-1/3 w-1 h-1 bg-blue-300 rounded-full animate-pulse delay-75"></div>
+        <div className="absolute bottom-1/4 left-1/3 w-1.5 h-1.5 bg-blue-500 rounded-full animate-pulse delay-150"></div>
+        <div className="absolute top-1/2 right-1/4 w-2 h-2 bg-blue-400 rounded-full animate-pulse delay-300"></div>
       </div>
 
-      {/* OVERLAY DARK */}
-      <div className="absolute inset-0 bg-slate-900/40"></div>
+      {/* Grid Pattern Background */}
+      <div className="absolute inset-0 bg-[linear-gradient(rgba(59,130,246,0.05)_1px,transparent_1px),linear-gradient(90deg,rgba(59,130,246,0.05)_1px,transparent_1px)] bg-[size:50px_50px] [mask-image:radial-gradient(ellipse_80%_80%_at_50%_50%,#000_60%,transparent_100%)]"></div>
 
-      {/* TEXT */}
-      <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-4 animate-fadeIn">
-        <h1 className="text-5xl md:text-6xl font-extrabold text-white tracking-wide drop-shadow-xl">
-          EMOF <span className="text-blue-500">Teknoloji</span>
-        </h1>
+      {/* Airplane Drawing Animation */}
+      <div className="absolute inset-0 flex items-center justify-center">
+        <div className="relative w-full max-w-4xl h-[60vh] flex items-center justify-center">
+          {planeStages.map((planeStage, index) => (
+            <div
+              key={index}
+              className={`absolute inset-0 transition-all duration-700 ${
+                index === stage
+                  ? "opacity-100 scale-100"
+                  : index < stage
+                  ? "opacity-0 scale-95"
+                  : "opacity-0 scale-105"
+              }`}
+            >
+              <div className="relative w-full h-full flex items-center justify-center">
+                <Image
+                  src={planeStage.src}
+                  alt={`Plane stage ${index + 1}`}
+                  width={800}
+                  height={500}
+                  className={`object-contain drop-shadow-2xl ${
+                    index === stage ? "animate-drawPlane" : ""
+                  }`}
+                  priority={index === 0}
+                />
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
 
-        <p className="text-lg md:text-xl text-gray-300 mt-4 tracking-wide">
-          CNC & Havacılık Üretim Teknolojileri
-        </p>
+      {/* Overlay for better text visibility */}
+      <div 
+        className={`absolute inset-0 bg-gradient-to-b from-transparent via-slate-900/50 to-slate-900/80 transition-opacity duration-1000 ${
+          showText ? "opacity-100" : "opacity-0"
+        }`}
+      ></div>
 
-        <a
-          href="#hakkimizda"
-          className="mt-8 px-8 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-md text-lg font-semibold transition-all shadow-lg hover:shadow-2xl"
+      {/* Text Content - Appears after plane animation */}
+      <div className="relative z-10 flex flex-col items-center justify-end h-full pb-20 px-4">
+        <div
+          className={`text-center space-y-6 transition-all duration-1000 ${
+            showText
+              ? "opacity-100 translate-y-0"
+              : "opacity-0 translate-y-10"
+          }`}
         >
-          Bizi Tanıyın
-        </a>
+          {/* Main Title */}
+          <h1 className="text-6xl md:text-7xl lg:text-8xl font-black text-white tracking-tight">
+            EMOF{" "}
+            <span className="bg-gradient-to-r from-blue-400 via-blue-500 to-cyan-400 bg-clip-text text-transparent">
+              Teknoloji
+            </span>
+          </h1>
+
+          {/* Subtitle */}
+          <p className="text-xl md:text-2xl text-gray-300 font-light tracking-wide">
+            CNC & Havacılık Üretim Teknolojileri
+          </p>
+
+          {/* Decorative Line */}
+          <div className="flex items-center justify-center gap-3 pt-4">
+            <div className="h-px w-16 bg-gradient-to-r from-transparent to-blue-500"></div>
+            <div className="h-1.5 w-1.5 bg-blue-500 rounded-full animate-pulse"></div>
+            <div className="h-px w-16 bg-gradient-to-l from-transparent to-blue-500"></div>
+          </div>
+
+          {/* CTA Button */}
+          <div className="pt-6">
+            <a
+              href="#hakkimizda"
+              className="group relative inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-500 hover:to-blue-600 text-white text-lg font-semibold rounded-full transition-all duration-300 shadow-lg hover:shadow-blue-500/50 hover:shadow-2xl hover:scale-105"
+            >
+              <span>Bizi Tanıyın</span>
+              <svg
+                className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M17 8l4 4m0 0l-4 4m4-4H3"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
       </div>
+
+      {/* Bottom Fade Effect */}
+      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-slate-900 to-transparent pointer-events-none"></div>
     </section>
   );
 }
