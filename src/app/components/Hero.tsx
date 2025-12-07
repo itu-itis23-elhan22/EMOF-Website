@@ -5,8 +5,8 @@ import Image from "next/image";
 
 export default function Hero() {
   const images = [
-    "/plane-outline.png",  // 1. çizim görüntü
-    "/plane-real.png",     // 2. gerçek fotoğraf
+    "/cizg.png",  // 1. çizim görüntü
+    "/realucak.png",     // 2. gerçek fotoğraf
   ];
 
   const [current, setCurrent] = useState(0);

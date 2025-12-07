@@ -49,8 +49,8 @@ export default function AboutSection() {
         <img
           src="/factory.jpg"
           alt="factory"
-          className="rounded-lg shadow-lg"
-        />
+          className="rounded-lg shadow-lg w-[70%] mx-auto"
+ />
 
         {/* Metin */}
         <p className="text-gray-300 leading-relaxed text-lg">
