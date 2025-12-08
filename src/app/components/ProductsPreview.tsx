@@ -1,5 +1,8 @@
+"use client";
+
 import Link from "next/link";
 import { FaCogs } from "react-icons/fa";
+import { useLanguage } from "../i18n/LanguageContext";
 
 const products = [
   {
@@ -25,6 +28,8 @@ const products = [
 ];
 
 export default function ProductsPreview() {
+  const { t } = useLanguage();
+
   return (
     <section
       id="urunler-onizleme"
@@ -35,14 +40,13 @@ export default function ProductsPreview() {
         <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
           <div>
             <p className="text-xs tracking-[0.3em] uppercase text-blue-400">
-              ÜRÜNLERİMİZ
+              {t("home.productsPreview.label")}
             </p>
             <h2 className="mt-2 text-3xl md:text-4xl font-bold text-white">
-              CNC & Havacılık Parça Çözümleri
+              {t("home.productsPreview.title")}
             </h2>
             <p className="mt-3 text-slate-300 max-w-2xl text-sm md:text-base">
-              Seri üretimden özel projelere kadar, havacılık standartlarına
-              uygun hassas işlenmiş parçalar sunuyoruz.
+              {t("home.productsPreview.description")}
             </p>
           </div>
 
@@ -50,7 +54,7 @@ export default function ProductsPreview() {
             href="/urunler"
             className="hidden md:inline-flex items-center gap-2 rounded-full bg-blue-600 hover:bg-blue-500 text-white px-6 py-3 text-sm font-semibold shadow-lg shadow-blue-500/30 transition"
           >
-            Tüm Ürünleri Gör
+            {t("home.productsPreview.cta")}
             <span className="text-lg">→</span>
           </Link>
         </div>
@@ -92,7 +96,7 @@ export default function ProductsPreview() {
             href="/urunler"
             className="inline-flex items-center gap-2 rounded-full bg-blue-600 hover:bg-blue-500 text-white px-6 py-3 text-sm font-semibold shadow-lg shadow-blue-500/30 transition"
           >
-            Tüm Ürünleri Gör
+            {t("home.productsPreview.cta")}
             <span className="text-lg">→</span>
           </Link>
         </div>

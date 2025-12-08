@@ -1,4 +1,5 @@
 "use client";
+import { useLanguage } from "../i18n/LanguageContext";
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
@@ -10,6 +11,7 @@ let heroAnimationPlayed = false;
 export default function Hero() {
   // Animasyon daha önce bu sekmede oynatıldı mı?
   const [hasPlayed, setHasPlayed] = useState(heroAnimationPlayed);
+  const { t } = useLanguage();
 
   // Animasyon state'leri
   const [stage, setStage] = useState(0);
@@ -51,7 +53,7 @@ export default function Hero() {
     if (stage === planeStages.length - 1) {
       const textTimer = setTimeout(() => {
         setShowText(true);
-        heroAnimationPlayed = true;   // ✅ Bu sekmede bir daha oynatılmayacak
+        heroAnimationPlayed = true; // ✅ Bu sekmede bir daha oynatılmayacak
         setHasPlayed(true);
       }, 600);
 
@@ -116,14 +118,14 @@ export default function Hero() {
           }`}
         >
           <h1 className="text-6xl md:text-7xl lg:text-8xl font-black text-white tracking-tight">
-            EMOF{" "}
+            {t("hero.titleLeft")}{" "}
             <span className="bg-gradient-to-r from-blue-400 via-blue-500 to-cyan-400 bg-clip-text text-transparent">
-              Teknoloji
+              {t("hero.titleRight")}
             </span>
           </h1>
 
           <p className="text-xl md:text-2xl text-gray-300 font-light tracking-wide">
-            CNC & Havacılık Üretim Teknolojileri
+            {t("hero.subtitle")}
           </p>
 
           <div className="flex items-center justify-center gap-3 pt-4">
@@ -137,7 +139,7 @@ export default function Hero() {
               href="#hakkimizda"
               className="group relative inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-500 hover:to-blue-600 text-white text-lg font-semibold rounded-full transition-all duration-300 shadow-lg hover:shadow-blue-500/50 hover:shadow-2xl hover:scale-105"
             >
-              <span>Bizi Tanıyın</span>
+              <span>{t("hero.cta")}</span>
               <svg
                 className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1"
                 fill="none"

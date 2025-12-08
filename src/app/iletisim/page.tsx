@@ -44,7 +44,7 @@ export default function IletisimPage() {
             </p>
 
             <a
-              href="https://wa.me/905300000000"
+              href="https://wa.me/905452650705"
               className="inline-block mt-2 px-4 py-2 bg-green-600 hover:bg-green-500 rounded-lg text-white text-sm transition"
               target="_blank"
             >

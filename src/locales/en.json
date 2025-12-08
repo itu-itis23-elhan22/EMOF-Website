@@ -1,0 +1,83 @@
+{
+  "navbar": {
+  "tabs": {
+    "corporate": "CORPORATE",
+    "products": "PRODUCTS",
+    "news": "NEWS",
+    "team": "OUR TEAM",
+    "contact": "CONTACT"
+  },
+  "corporate": {
+    "cards": {
+      "about": {
+        "title": "ABOUT US",
+        "subtitle": "EMOF"
+      },
+      "vision": {
+        "title": "OUR VISION",
+        "subtitle": "Our future goals"
+      },
+      "policies": {
+        "title": "OUR POLICIES",
+        "subtitle": "Quality & aerospace policies"
+      },
+      "references": {
+        "title": "REFERENCES",
+        "subtitle": "Projects & business partners"
+      }
+    }
+  },
+    "productsMenu": {
+    "cards": {
+      "products": {
+        "title": "PRODUCTS",
+        "subtitle": "Our CNC manufacturing portfolio"
+      },
+      "certificates": {
+        "title": "CERTIFICATES",
+        "subtitle": "Our quality management documents"
+      },
+      "comingSoon": {
+        "title": "COMING SOON",
+        "subtitle": "New category will be added"
+      }
+    }
+  },
+    "news": "NEWS",
+    "team": "OUR TEAM",
+    "contact": "CONTACT",
+    "langTR": "TR",
+    "langEN": "EN"
+  },
+  "hero": {
+    "titleLeft": "EMOF",
+    "titleRight": "Technology",
+    "subtitle": "CNC & Aerospace Manufacturing Technologies",
+    "cta": "Discover Us"
+  },"home": {
+    "productsPreview": {
+      "label": "OUR PRODUCTS",
+      "title": "CNC & Aerospace Component Solutions",
+      "description": "From serial production to custom projects, we deliver precision-machined parts that meet aerospace standards.",
+      "cta": "View All Products",
+      "products": [
+        {
+          "name": "Aircraft Body Components",
+          "desc": "Machined body and structural components meeting aerospace standards."
+        },
+        {
+          "name": "Titanium Fasteners",
+          "desc": "High-strength, corrosion-resistant fastening solutions."
+        },
+        {
+          "name": "CNC-Machined Prototypes",
+          "desc": "Low-volume, high-precision prototype production."
+        },
+        {
+          "name": "Engine Components",
+          "desc": "Precision engine components resistant to thermal loads."
+        }
+      ]
+    }
+  }
+}

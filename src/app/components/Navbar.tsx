@@ -1,4 +1,5 @@
 "use client";
+import { useLanguage } from "../i18n/LanguageContext";
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
@@ -15,6 +16,7 @@ import {
 export default function Navbar() {
   const [openMenu, setOpenMenu] = useState<string | null>(null);
   const pathname = usePathname();
+  const { lang, t, setLang } = useLanguage();
 
   // Route değişince tüm menüleri kapat
   useEffect(() => {
@@ -28,18 +30,19 @@ export default function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-8 py-5 flex items-center justify-between">
         {/* LOGO */}
-       <Link href="/" className="text-3xl font-extrabold tracking-wide flex items-center gap-2">
+        <Link
+          href="/"
+          className="text-3xl font-extrabold tracking-wide flex items-center gap-2"
+        >
+          <span className="flex text-white">
+            <span className="animate-letter-1">E</span>
+            <span className="animate-letter-2">M</span>
+            <span className="animate-letter-3">O</span>
+            <span className="animate-letter-4">F</span>
+          </span>
 
-  <span className="flex text-white">
-    <span className="animate-letter-1">E</span>
-    <span className="animate-letter-2">M</span>
-    <span className="animate-letter-3">O</span>
-    <span className="animate-letter-4">F</span>
-  </span>
-
-  <span className="text-blue-500">Teknoloji</span>
-</Link>
-
+          <span className="text-blue-500">Teknoloji</span>
+        </Link>
 
         {/* MENU */}
         <div className="flex items-center gap-10 text-white font-medium">
@@ -49,26 +52,25 @@ export default function Navbar() {
             onMouseEnter={() => setOpenMenu("kurumsal")}
           >
             <button className="hover:text-blue-400 transition text-lg tracking-wide">
-              KURUMSAL
+              {t("navbar.tabs.corporate")}
             </button>
 
             {/* underline: sadece hover ile kontrol */}
             <div className="h-[2px] bg-blue-500 w-0 group-hover:w-full transition-all duration-300" />
 
             {/* Mega menu */}
-            {/* Mega menu */}
             <div
               className={`
-    absolute left-1/2 -translate-x-1/2
-    mt-2 pt-4
-    w-[1000px] bg-slate-900 text-white shadow-xl rounded-md py-10 px-10
-    transition-all duration-300 ease-out
-    ${
-      openMenu === "kurumsal"
-        ? "visible opacity-100 translate-y-0"
-        : "invisible opacity-0 translate-y-3 pointer-events-none"
-    }
-  `}
+      absolute left-1/2 -translate-x-1/2
+      mt-2 pt-4
+      w-[1000px] bg-slate-900 text-white shadow-xl rounded-md py-10 px-10
+      transition-all duration-300 ease-out
+      ${
+        openMenu === "kurumsal"
+          ? "visible opacity-100 translate-y-0"
+          : "invisible opacity-0 translate-y-3 pointer-events-none"
+      }
+    `}
             >
               <div className="grid grid-cols-4 gap-10">
                 {/* HAKKIMIZDA */}
@@ -76,14 +78,16 @@ export default function Navbar() {
                   href="/#hakkimizda"
                   onClick={() => setOpenMenu(null)}
                   className="group block text-center rounded-xl border px-6 py-6 transition-all duration-300
-                 bg-slate-900/40 border-slate-700
-                 hover:bg-slate-800 hover:border-blue-500 hover:scale-[1.05] hover:shadow-xl"
+                   bg-slate-900/40 border-slate-700
+                   hover:bg-slate-800 hover:border-blue-500 hover:scale-[1.05] hover:shadow-xl"
                 >
                   <FaHome className="text-5xl mx-auto text-blue-500 group-hover:scale-110 transition" />
                   <h3 className="mt-4 text-xl font-bold group-hover:text-blue-400 transition">
-                    HAKKIMIZDA
+                    {t("navbar.corporate.cards.about.title")}
                   </h3>
-                  <p className="mt-2 text-gray-300 text-sm">EMOF</p>
+                  <p className="mt-2 text-gray-300 text-sm">
+                    {t("navbar.corporate.cards.about.subtitle")}
+                  </p>
                 </Link>
 
                 {/* VİZYONUMUZ */}
@@ -91,15 +95,15 @@ export default function Navbar() {
                   href="/vizyon"
                   onClick={() => setOpenMenu(null)}
                   className="group block text-center rounded-xl border px-6 py-6 transition-all duration-300
-                 bg-slate-900/40 border-slate-700
-                 hover:bg-slate-800 hover:border-blue-500 hover:scale-[1.05] hover:shadow-xl"
+                   bg-slate-900/40 border-slate-700
+                   hover:bg-slate-800 hover:border-blue-500 hover:scale-[1.05] hover:shadow-xl"
                 >
                   <FaFlag className="text-5xl mx-auto text-blue-500 group-hover:scale-110 transition" />
                   <h3 className="mt-4 text-xl font-bold group-hover:text-blue-400 transition">
-                    VİZYONUMUZ
+                    {t("navbar.corporate.cards.vision.title")}
                   </h3>
                   <p className="mt-2 text-gray-300 text-sm">
-                    Gelecek hedeflerimiz
+                    {t("navbar.corporate.cards.vision.subtitle")}
                   </p>
                 </Link>
 
@@ -108,32 +112,32 @@ export default function Navbar() {
                   href="/politikalar"
                   onClick={() => setOpenMenu(null)}
                   className="group block text-center rounded-xl border px-6 py-6 transition-all duration-300
-                 bg-slate-900/40 border-slate-700
-                 hover:bg-slate-800 hover:border-blue-500 hover:scale-[1.05] hover:shadow-xl"
+                   bg-slate-900/40 border-slate-700
+                   hover:bg-slate-800 hover:border-blue-500 hover:scale-[1.05] hover:shadow-xl"
                 >
                   <FaFileAlt className="text-5xl mx-auto text-blue-500 group-hover:scale-110 transition" />
                   <h3 className="mt-4 text-xl font-bold group-hover:text-blue-400 transition">
-                    POLİTİKALARIMIZ
+                    {t("navbar.corporate.cards.policies.title")}
                   </h3>
                   <p className="mt-2 text-gray-300 text-sm">
-                    Kalite & Havacılık politikalarımız
+                    {t("navbar.corporate.cards.policies.subtitle")}
                   </p>
                 </Link>
 
-                {/* ⭐ REFERANSLAR */}
+                {/* REFERANSLAR */}
                 <Link
                   href="/referanslar"
                   onClick={() => setOpenMenu(null)}
                   className="group block text-center rounded-xl border px-6 py-6 transition-all duration-300
-                 bg-slate-900/40 border-slate-700
-                 hover:bg-slate-800 hover:border-blue-500 hover:scale-[1.05] hover:shadow-xl"
+                   bg-slate-900/40 border-slate-700
+                   hover:bg-slate-800 hover:border-blue-500 hover:scale-[1.05] hover:shadow-xl"
                 >
                   <FaHandshake className="text-5xl mx-auto text-blue-500 group-hover:scale-110 transition" />
                   <h3 className="mt-4 text-xl font-bold group-hover:text-blue-400 transition">
-                    REFERANSLAR
+                    {t("navbar.corporate.cards.references.title")}
                   </h3>
                   <p className="mt-2 text-gray-300 text-sm">
-                    Projeler & iş ortaklarımız
+                    {t("navbar.corporate.cards.references.subtitle")}
                   </p>
                 </Link>
               </div>
@@ -146,7 +150,7 @@ export default function Navbar() {
             onMouseEnter={() => setOpenMenu("urunler")}
           >
             <button className="hover:text-blue-400 transition text-lg tracking-wide">
-              ÜRÜNLERİMİZ
+              {t("navbar.tabs.products")}
             </button>
 
             {/* underline: sadece hover ile kontrol */}
@@ -155,31 +159,31 @@ export default function Navbar() {
             {/* Mega menu */}
             <div
               className={`
-                absolute left-1/2 -translate-x-1/2
-                mt-2 pt-4
-                w-[900px] bg-slate-900 text-white shadow-xl rounded-md py-10 px-10
-                transition-all duration-300 ease-out
-                ${
-                  openMenu === "urunler"
-                    ? "visible opacity-100 translate-y-0"
-                    : "invisible opacity-0 translate-y-3 pointer-events-none"
-                }
-              `}
+      absolute left-1/2 -translate-x-1/2
+      mt-2 pt-4
+      w-[900px] bg-slate-900 text-white shadow-xl rounded-md py-10 px-10
+      transition-all duration-300 ease-out
+      ${
+        openMenu === "urunler"
+          ? "visible opacity-100 translate-y-0"
+          : "invisible opacity-0 translate-y-3 pointer-events-none"
+      }
+    `}
             >
               <div className="grid grid-cols-3 gap-10">
                 <Link
                   href="/urunler"
                   onClick={() => setOpenMenu(null)}
                   className="group block text-center rounded-xl border px-6 py-6 transition-all duration-300
-                             bg-slate-900/40 border-slate-700
-                             hover:bg-slate-800 hover:border-blue-500 hover:scale-[1.05] hover:shadow-xl"
+                   bg-slate-900/40 border-slate-700
+                   hover:bg-slate-800 hover:border-blue-500 hover:scale-[1.05] hover:shadow-xl"
                 >
                   <FaCogs className="text-5xl mx-auto text-blue-500 group-hover:scale-110 transition" />
                   <h3 className="mt-4 text-xl font-bold group-hover:text-blue-400 transition">
-                    ÜRÜNLER
+                    {t("navbar.productsMenu.cards.products.title")}
                   </h3>
                   <p className="mt-2 text-gray-300 text-sm">
-                    CNC üretim portföyümüz
+                    {t("navbar.productsMenu.cards.products.subtitle")}
                   </p>
                 </Link>
 
@@ -187,25 +191,25 @@ export default function Navbar() {
                   href="/sertifikalar"
                   onClick={() => setOpenMenu(null)}
                   className="group block text-center rounded-xl border px-6 py-6 transition-all duration-300
-                             bg-slate-900/40 border-slate-700
-                             hover:bg-slate-800 hover:border-blue-500 hover:scale-[1.05] hover:shadow-xl"
+                   bg-slate-900/40 border-slate-700
+                   hover:bg-slate-800 hover:border-blue-500 hover:scale-[1.05] hover:shadow-xl"
                 >
                   <FaCertificate className="text-5xl mx-auto text-blue-500 group-hover:scale-110 transition" />
                   <h3 className="mt-4 text-xl font-bold group-hover:text-blue-400 transition">
-                    SERTİFİKALAR
+                    {t("navbar.productsMenu.cards.certificates.title")}
                   </h3>
                   <p className="mt-2 text-gray-300 text-sm">
-                    Kalite yönetim belgelerimiz
+                    {t("navbar.productsMenu.cards.certificates.subtitle")}
                   </p>
                 </Link>
 
                 <div className="group block text-center rounded-xl border px-6 py-6 bg-slate-900/40 border-slate-700 opacity-40">
                   <FaCogs className="text-5xl mx-auto text-slate-600" />
                   <h3 className="mt-4 text-xl font-bold text-slate-500">
-                    YAKINDA
+                    {t("navbar.productsMenu.cards.comingSoon.title")}
                   </h3>
                   <p className="mt-2 text-slate-600 text-sm">
-                    Yeni kategori eklenecek
+                    {t("navbar.productsMenu.cards.comingSoon.subtitle")}
                   </p>
                 </div>
               </div>
@@ -221,7 +225,7 @@ export default function Navbar() {
               href="/haberler"
               className="hover:text-blue-400 transition text-lg tracking-wide"
             >
-              HABERLER
+              {t("navbar.tabs.news")}
             </Link>
             <div className="h-[2px] bg-blue-500 w-0 group-hover:w-full transition-all duration-300" />
           </div>
@@ -235,7 +239,7 @@ export default function Navbar() {
               href="/kadromuz"
               className="hover:text-blue-400 transition text-lg tracking-wide"
             >
-              KADROMUZ
+              {t("navbar.tabs.team")}
             </Link>
             <div className="h-[2px] bg-blue-500 w-0 group-hover:w-full transition-all duration-300" />
           </div>
@@ -249,20 +253,30 @@ export default function Navbar() {
               href="/iletisim"
               className="hover:text-blue-400 transition text-lg tracking-wide"
             >
-              İLETİŞİM
+              {t("navbar.tabs.contact")}
             </Link>
             <div className="h-[2px] bg-blue-500 w-0 group-hover:w-full transition-all duration-300" />
           </div>
 
           {/* LANG */}
           <div className="flex items-center gap-2 text-lg">
-            <Link href="/?lang=tr" className="hover:text-blue-400">
-              TR
-            </Link>
+            <button
+              onClick={() => setLang("tr")}
+              className={`hover:text-blue-400 transition ${
+                lang === "tr" ? "text-blue-400 font-semibold" : ""
+              }`}
+            >
+              {t("navbar.langTR")}
+            </button>
             <span>|</span>
-            <Link href="/?lang=en" className="hover:text-blue-400">
-              EN
-            </Link>
+            <button
+              onClick={() => setLang("en")}
+              className={`hover:text-blue-400 transition ${
+                lang === "en" ? "text-blue-400 font-semibold" : ""
+              }`}
+            >
+              {t("navbar.langEN")}
+            </button>
           </div>
         </div>
       </div>
