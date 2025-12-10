@@ -1,0 +1,46 @@
+{
+  "brand": {
+    "name": "EMOF",
+    "highlight": "Teknoloji",
+    "description": "CNC işleme, havacılık ve savunma sanayi için yüksek hassasiyetli parça üretimi."
+  },
+  "quickMenu": {
+    "title": "Hızlı Menü",
+    "items": [
+      { "label": "Hakkımızda", "href": "/#hakkimizda" },
+      { "label": "Ürünler", "href": "/urunler" },
+      { "label": "Haberler", "href": "/haberler" },
+      { "label": "İletişim", "href": "/iletisim" }
+    ]
+  },
+  "contact": {
+    "title": "Bize Ulaşın",
+    "address": "Ankara Uzay & Havacılık Sanayi Bölgesi",
+    "phone": "+90 (312) 000 00 00",
+    "email": "info@emofteknoloji.com"
+  },
+  "certificates": {
+    "title": "Sertifikalar",
+    "items": [
+      {
+        "src": "/cert-iso9001.png",
+        "alt": "ISO 9001 Sertifikası"
+      },
+      {
+        "src": "/cert-as9100.png",
+        "alt": "AS 9100 Sertifikası"
+      }
+    ]
+  },
+  "social": {
+    "icons": [
+      { "label": "Web Sitesi", "href": "#", "symbol": "🌐" },
+      { "label": "Facebook", "href": "#", "symbol": "📘" },
+      { "label": "Instagram", "href": "#", "symbol": "📸" },
+      { "label": "YouTube", "href": "#", "symbol": "▶️" }
+    ]
+  },
+  "copyright": {
+    "text": "EMOF Teknoloji — Tüm Hakları Saklıdır."
+  }
+}

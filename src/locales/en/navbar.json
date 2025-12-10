@@ -1,0 +1,52 @@
+{
+  "tabs": {
+    "corporate": "CORPORATE",
+      "main-name":"TECHNOLOGY",
+
+    "products": "OUR PRODUCTS",
+    "news": "NEWS",
+    "team": "OUR TEAM",
+    "contact": "CONTACT"
+  },
+  "corporate": {
+    "cards": {
+    "capabilities": {
+        "title": "CAPABILITIES",
+        "subtitle": "Machine park & technical capacity"
+      },
+      "vision": {
+        "title": "OUR VISION",
+        "subtitle": "Our future goals"
+      },
+      "policies": {
+        "title": "OUR POLICIES",
+        "subtitle": "Quality & Aviation policies"
+      },
+      "references": {
+        "title": "REFERENCES",
+        "subtitle": "Projects & business partners"
+      }
+    }
+  },
+  "productsMenu": {
+    "cards": {
+      "products": {
+        "title": "PRODUCTS",
+        "subtitle": "Our CNC production portfolio"
+      },
+      "certificates": {
+        "title": "CERTIFICATES",
+        "subtitle": "Quality management documents"
+      },
+      "comingSoon": {
+        "title": "COMING SOON",
+        "subtitle": "New category to be added"
+      }
+    }
+  },
+  "news": "NEWS",
+  "team": "OUR TEAM",
+  "contact": "CONTACT",
+  "langTR": "TR",
+  "langEN": "EN"
+}

@@ -1,0 +1,46 @@
+{
+  "brand": {
+    "name": "EMOF",
+    "highlight": "Technology",
+    "description": "CNC machining, high-precision part production for the aviation and defense industries."
+  },
+  "quickMenu": {
+    "title": "Quick Menu",
+    "items": [
+      { "label": "About Us", "href": "/#hakkimizda" },
+      { "label": "Products", "href": "/urunler" },
+      { "label": "News", "href": "/haberler" },
+      { "label": "Contact", "href": "/iletisim" }
+    ]
+  },
+  "contact": {
+    "title": "Contact Us",
+    "address": "Ankara Aerospace & Aviation Industrial Zone",
+    "phone": "+90 (312) 000 00 00",
+    "email": "info@emofteknoloji.com"
+  },
+  "certificates": {
+    "title": "Certificates",
+    "items": [
+      {
+        "src": "/cert-iso9001.png",
+        "alt": "ISO 9001 Certificate"
+      },
+      {
+        "src": "/cert-as9100.png",
+        "alt": "AS 9100 Certificate"
+      }
+    ]
+  },
+  "social": {
+    "icons": [
+      { "label": "Website", "href": "#", "symbol": "🌐" },
+      { "label": "Facebook", "href": "#", "symbol": "📘" },
+      { "label": "Instagram", "href": "#", "symbol": "📸" },
+      { "label": "YouTube", "href": "#", "symbol": "▶️" }
+    ]
+  },
+  "copyright": {
+    "text": "EMOF Technology — All Rights Reserved."
+  }
+}

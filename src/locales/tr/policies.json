@@ -1,0 +1,31 @@
+{
+  "header": {
+    "label": "KALİTE POLİTİKALARIMIZ",
+    "titleMain": "Uluslararası Standartlarda",
+    "titleHighlight": " Havacılık Üretimi",
+    "intro": "EMOF Teknoloji, üretiminin her aşamasında uçuş güvenliğini, kaliteyi ve iş güvenliğini öncelik olarak benimser. Tüm süreçlerimiz AS9100, ISO 9001 ve ISO 45001 standartlarıyla uyumludur."
+  },
+  "blocks": [
+    {
+      "title": "• Kalite Yönetim Sistemi",
+      "body": "Üretim süreçlerimiz AS9100 kalite standardına göre tasarlanmış olup, parça izlenebilirliği, proses kontrolü ve dokümantasyon yönetimi en üst seviyede yürütülür."
+    },
+    {
+      "title": "• İş Güvenliği & Çevre Politikası",
+      "body": "Tüm operasyonlarımızda çalışan sağlığı, çevre güvenliği ve yasal uyumluluk temel önceliktir. Sürdürülebilir üretim prensipleriyle hareket ederiz."
+    },
+    {
+      "title": "• Sürekli Gelişim",
+      "body": "EMOF Teknoloji, her yıl Ar-Ge ve modernizasyon yatırımlarını artırarak kalite ve üretim verimliliğini sürekli olarak geliştirir."
+    }
+  ],
+  "standards": {
+    "title": "Uygulanan Standartlar",
+    "items": [
+      "AS9100 Rev.D Havacılık Kalite Standardı",
+      "ISO 9001:2015 Kalite Yönetim Sistemi",
+      "ISO 45001 İş Sağlığı ve Güvenliği",
+      "Havacılık tedarik zinciri gereksinimleri"
+    ]
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "header": {
+    "label": "KADROMUZ",
+    "titleMain": "Uzman Ekibimizle",
+    "titleHighlight": " Havacılık Üretimine Güç Katıyoruz",
+    "intro": "EMOF Teknoloji; mühendislik, üretim, kalite ve destek birimlerinden oluşan disiplinli ve deneyimli bir ekip yapısına sahiptir. Her çalışanımız, havacılık standartlarına uygun üretim hedefiyle hareket eder."
+  },
+  "stats": [
+    { "label": "Toplam Çalışan", "value": "54" },
+    { "label": "Mühendis", "value": "18" },
+    { "label": "Teknisyen / Operatör", "value": "26" },
+    { "label": "Kalite & Destek", "value": "10" }
+  ],
+  "teamsTitle": "Ekip Yapımız",
+  "teams": [
+    {
+      "title": "Yönetim & Planlama",
+      "desc": "Şirket stratejisi, proje yönetimi ve üretim planlamasından sorumlu ekip.",
+      "roles": [
+        "Genel Müdür",
+        "Operasyon Yöneticisi",
+        "Üretim Planlama Uzmanları"
+      ]
+    },
+    {
+      "title": "Mühendislik",
+      "desc": "CNC işleme yöntemleri, proses tasarımı ve teknik dokümantasyon ekibi.",
+      "roles": [
+        "Makine Mühendisleri",
+        "Havacılık Mühendisleri",
+        "Proses / İmalat Mühendisleri",
+        "Ar-Ge Mühendisleri"
+      ]
+    },
+    {
+      "title": "Üretim & Operasyon",
+      "desc": "CNC tezgahlarının işletilmesi, programlama ve saha uygulamaları.",
+      "roles": [
+        "CNC Operatörleri",
+        "Takım Ayarcılar",
+        "Tezgah Programcıları"
+      ]
+    },
+    {
+      "title": "Kalite & Sertifikasyon",
+      "desc": "AS9100 ve havacılık gerekliliklerine uygun kalite yönetim süreçleri.",
+      "roles": [
+        "Kalite Kontrol Uzmanları",
+        "CMM Operatörleri",
+        "Dokümantasyon / Sertifikasyon"
+      ]
+    },
+    {
+      "title": "Lojistik & Depo",
+      "desc": "Malzeme giriş-çıkışı, stok yönetimi ve sevkiyat organizasyonu.",
+      "roles": [
+        "Lojistik Sorumluları",
+        "Depo Görevlileri"
+      ]
+    },
+    {
+      "title": "Destek & İdari",
+      "desc": "İnsan kaynakları, finans ve idari operasyonlar.",
+      "roles": [
+        "İK Uzmanları",
+        "Finans / Muhasebe",
+        "İdari İşler"
+      ]
+    }
+  ]
+}

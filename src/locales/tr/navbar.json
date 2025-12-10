@@ -1,0 +1,52 @@
+{
+  "tabs": {
+    "corporate": "KURUMSAL",
+      "main-name":"TEKNOLOJİ",
+
+    "products": "ÜRÜNLERİMİZ",
+    "news": "HABERLER",
+    "team": "KADROMUZ",
+    "contact": "İLETİŞİM"
+  },
+  "corporate": {
+    "cards": {
+     "capabilities": {
+        "title": "KABİLİYETLERİMİZ",
+        "subtitle": "Makine parkı ve teknik kapasitemiz"
+      },
+      "vision": {
+        "title": "VİZYONUMUZ",
+        "subtitle": "Gelecek hedeflerimiz"
+      },
+      "policies": {
+        "title": "POLİTİKALARIMIZ",
+        "subtitle": "Kalite & Havacılık politikalarımız"
+      },
+      "references": {
+        "title": "REFERANSLAR",
+        "subtitle": "Projeler & iş ortaklarımız"
+      }
+    }
+  },
+  "productsMenu": {
+    "cards": {
+      "products": {
+        "title": "ÜRÜNLER",
+        "subtitle": "CNC üretim portföyümüz"
+      },
+      "certificates": {
+        "title": "SERTİFİKALAR",
+        "subtitle": "Kalite yönetim belgelerimiz"
+      },
+      "comingSoon": {
+        "title": "YAKINDA",
+        "subtitle": "Yeni kategori eklenecek"
+      }
+    }
+  },
+  "news": "HABERLER",
+  "team": "KADROMUZ",
+  "contact": "İLETİŞİM",
+  "langTR": "TR",
+  "langEN": "EN"
+}

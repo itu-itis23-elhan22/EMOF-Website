@@ -78,6 +78,30 @@
           "desc": "Precision engine components resistant to thermal loads."
         }
       ]
-    }
+    },
+    "about": {
+    "title": "ABOUT US",
+    "intro": "EMOF Technology is an engineering company specialized in high-precision CNC manufacturing processes for the aerospace and defense industries. With innovative production techniques and a strong engineering infrastructure, we provide our customers with reliable, high-quality and sustainable solutions.",
+    "stats": {
+      "employees": {
+        "value": "50+",
+        "label": "Employees"
+      },
+      "capacity": {
+        "value": "250,000+",
+        "label": "Annual Production Capacity"
+      },
+      "facility": {
+        "value": "5,000 m²",
+        "label": "Facility Area"
+      },
+      "programs": {
+        "value": "12",
+        "label": "Active Programs"
+      }
+    },
+    "body": "Thanks to our modern production machines, experienced engineering team and quality-oriented process management, EMOF Technology reliably manufactures the high-precision parts required by the aerospace industry. From design to prototype, from serial production to quality control, we embrace excellence at every step and have become a strong solution partner in the sector."
+  }
+
   }
 }

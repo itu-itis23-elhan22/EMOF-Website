@@ -1,0 +1,28 @@
+{
+  "label": "OUR PRODUCTS",
+  "title": "CNC & Aviation Part Solutions",
+  "description": "From mass production to custom projects, we offer precision machined parts complying with aviation standards.",
+  "cta": "View All Products",
+  "products": [
+    {
+      "name": "Airframe Components",
+      "code": "AERO-STRUCT",
+      "desc": "Fuselage and structural components machined to aviation standards."
+    },
+    {
+      "name": "Titanium Fasteners",
+      "code": "TI-FAST",
+      "desc": "High-strength, corrosion-resistant fastening solutions."
+    },
+    {
+      "name": "CNC Machined Prototypes",
+      "code": "CNC-PROT",
+      "desc": "Low-volume, high-precision prototype production."
+    },
+    {
+      "name": "Engine Components",
+      "code": "ENG-PARTS",
+      "desc": "Precision engine components resistant to thermal and mechanical loads."
+    }
+  ]
+}

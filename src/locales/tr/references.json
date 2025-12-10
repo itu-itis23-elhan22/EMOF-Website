@@ -1,0 +1,43 @@
+{
+  "header": {
+    "label": "REFERANSLAR",
+    "title": "Güvenilir İş Ortaklıkları ve Proje Deneyimi",
+    "intro": "EMOF Teknoloji, havacılık ve savunma sanayii başta olmak üzere birçok sektörde yüksek hassasiyetli üretim çözümleri sunmaktadır. Aşağıda, hizmet verdiğimiz başlıca alanlar ve örnek proje tipleri yer almaktadır."
+  },
+  "stats": [
+    { "label": "Tamamlanan Proje", "value": "80+" },
+    { "label": "Teslim Edilen Parça", "value": "5.000+" },
+    { "label": "Zamanında Teslimat", "value": "%98" },
+    { "label": "Uluslararası Standart", "value": "AS9100 & ISO" }
+  ],
+  "sectorsTitle": "Hizmet Verdiğimiz Alanlar",
+  "sectors": [
+    {
+      "title": "Ticari Havacılık",
+      "desc": "Yolcu uçakları için gövde, bağlantı ve yapısal destek parçaları."
+    },
+    {
+      "title": "Savunma & Uzay",
+      "desc": "İHA, helikopter ve uydu platformları için hassas işlenmiş bileşenler."
+    },
+    {
+      "title": "Endüstriyel Makina",
+      "desc": "Yüksek dayanımlı mekanik sistemler için motor ve gövde elemanları."
+    }
+  ],
+  "projectsTitle": "Örnek Parça & Proje Tipleri",
+  "projects": [
+    {
+      "name": "Yapısal Bağlantı Elemanları",
+      "detail": "Alüminyum ve titanyumdan üretilen, havacılık standardı bağlantı ve bracket parçaları."
+    },
+    {
+      "name": "Motor Destek Bileşenleri",
+      "detail": "Yüksek sıcaklık ve mekanik yüke dayanıklı, CNC işlenmiş motor komponentleri."
+    },
+    {
+      "name": "Prototip Gövde Panelleri",
+      "detail": "Yeni platformlar için düşük adetli, yüksek hassasiyetli gövde prototip parçaları."
+    }
+  ]
+}

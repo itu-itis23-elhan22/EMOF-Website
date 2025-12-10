@@ -1,0 +1,28 @@
+{
+  "header": {
+    "label": "HABERLER",
+    "title": "Son Gelişmeler & Duyurular",
+    "intro": "EMOF Teknoloji olarak üretim, sertifikasyon ve Ar-Ge süreçlerimizdeki tüm yenilikleri buradan takip edebilirsiniz."
+  },
+  "detailLabel": "Haberin Detayı →",
+  "items": [
+    {
+      "title": "EMOF Teknoloji, Yeni CNC Üretim Hattını Devreye Aldı",
+      "date": "12 Ocak 2025",
+      "desc": "Havacılık sektörüne yönelik yüksek hassasiyetli üretim kapasitesi artırıldı.",
+      "img": "/news1.jpg"
+    },
+    {
+      "title": "ISO 9001 & ISO 45001 Sertifikasyon Süreci Tamamlandı",
+      "date": "05 Aralık 2024",
+      "desc": "Kalite yönetimi ve iş güvenliği alanında uluslararası standartlara uyum sağlandı.",
+      "img": "/news2.jpg"
+    },
+    {
+      "title": "Yeni Ar-Ge Projesi TÜBİTAK Tarafından Desteklendi",
+      "date": "20 Kasım 2024",
+      "desc": "Havacılık yapısal parçaları için gelişmiş titanyum alaşımlar üzerine çalışmalar başladı.",
+      "img": "/news3.jpg"
+    }
+  ]
+}

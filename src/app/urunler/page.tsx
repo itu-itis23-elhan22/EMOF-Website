@@ -1,59 +1,38 @@
+"use client";
 
-
+import { useLanguage } from "../i18n/LanguageContext";
+import productsTR from "../../locales/tr/products.json";
+import productsEN from "../../locales/en/products.json";
 import { FaCogs } from "react-icons/fa";
 
-const products = [
-  {
-    name: "Uçak Gövde Parçaları",
-    code: "AERO-STRUCT",
-    desc: "Gövde ve konstrüksiyon bileşenleri için yüksek hassasiyetli CNC işleme.",
-  },
-  {
-    name: "Titanyum Bağlantı Elemanları",
-    code: "TI-FAST",
-    desc: "Hafif ve yüksek mukavemetli titanyum bağlantı elemanları.",
-  },
-  {
-    name: "CNC İşlenmiş Prototipler",
-    code: "CNC-PROT",
-    desc: "Ar-Ge projeleri için düşük adetli, hızlı prototip üretimi.",
-  },
-  {
-    name: "Motor Bileşenleri",
-    code: "ENG-PARTS",
-    desc: "Isıl ve mekanik yüke dayanıklı motor parçaları.",
-  },
-  {
-    name: "Kabuk & Braket Parçalar",
-    code: "BRKT-SHELL",
-    desc: "Montaj braketleri ve destek elemanları.",
-  },
-  {
-    name: "Özel Proje Parçaları",
-    code: "CUSTOM",
-    desc: "Müşteri çizimlerine göre özel parça üretimi.",
-  },
-];
+const productsData = {
+  tr: productsTR,
+  en: productsEN,
+} as const;
 
 export default function ProductsPage() {
+  const { lang } = useLanguage();
+  const data = productsData[lang];
+
   return (
     <main className="bg-slate-950 min-h-screen py-16">
       <div className="max-w-7xl mx-auto px-6 space-y-10">
+        {/* HEADER */}
         <header className="space-y-3">
           <p className="text-xs tracking-[0.3em] uppercase text-blue-400">
-            ÜRÜNLERİMİZ
+            {data.header.label}
           </p>
           <h1 className="text-3xl md:text-4xl font-bold text-white">
-            CNC & Havacılık Parça Portföyü
+            {data.header.title}
           </h1>
           <p className="text-slate-300 max-w-2xl text-sm md:text-base">
-            EMOF Teknoloji, uçak yapıları, motor bileşenleri ve özel proje
-            parçaları dahil olmak üzere geniş bir ürün yelpazesi sunar.
+            {data.header.intro}
           </p>
         </header>
 
+        {/* PRODUCTS GRID */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {products.map((p) => (
+          {data.items.map((p) => (
             <div
               key={p.code}
               className="bg-slate-900/80 border border-slate-800 rounded-2xl p-5 shadow-lg hover:-translate-y-1 hover:border-blue-500/70 transition"

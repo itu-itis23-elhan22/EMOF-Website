@@ -1,0 +1,55 @@
+{
+  "header": {
+    "label": "REFERENCES",
+    "title": "Reliable Business Partnerships and Project Experience",
+    "intro": "EMOF Teknoloji provides high-precision manufacturing solutions in many sectors, primarily in the aviation and defense industries. Below are the main areas we serve and sample project types."
+  },
+  "stats": [
+    {
+      "label": "Completed Projects",
+      "value": "80+"
+    },
+    {
+      "label": "Parts Delivered",
+      "value": "5,000+"
+    },
+    {
+      "label": "On-Time Delivery",
+      "value": "%98"
+    },
+    {
+      "label": "International Standard",
+      "value": "AS9100 & ISO"
+    }
+  ],
+  "sectorsTitle": "Sectors We Serve",
+  "sectors": [
+    {
+      "title": "Commercial Aviation",
+      "desc": "Fuselage, connection, and structural support parts for passenger aircraft."
+    },
+    {
+      "title": "Defense & Space",
+      "desc": "Precision machined components for UAV, helicopter, and satellite platforms."
+    },
+    {
+      "title": "Industrial Machinery",
+      "desc": "Engine and body elements for high-strength mechanical systems."
+    }
+  ],
+  "projectsTitle": "Sample Part & Project Types",
+  "projects": [
+    {
+      "name": "Structural Connection Elements",
+      "detail": "Aviation standard connection and bracket parts manufactured from aluminum and titanium."
+    },
+    {
+      "name": "Engine Support Components",
+      "detail": "CNC machined engine components resistant to high temperature and mechanical load."
+    },
+    {
+      "name": "Prototype Fuselage Panels",
+      "detail": "Low-volume, high-precision fuselage prototype parts for new platforms."
+    }
+  ]
+}

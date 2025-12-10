@@ -1,0 +1,49 @@
+{
+  "productsPreview": {
+    "label": "OUR PRODUCTS",
+    "title": "CNC & Aviation Part Solutions",
+    "description": "From mass production to custom projects, we offer precision machined parts complying with aviation standards.",
+    "cta": "View All Products",
+    "products": [
+      {
+        "name": "Airframe Components",
+        "desc": "Fuselage and structural components machined to aviation standards."
+      },
+      {
+        "name": "Titanium Fasteners",
+        "desc": "High-strength, corrosion-resistant fastening solutions."
+      },
+      {
+        "name": "CNC Machined Prototypes",
+        "desc": "Low-volume, high-precision prototype production."
+      },
+      {
+        "name": "Engine Components",
+        "desc": "Precision engine components resistant to thermal loads."
+      }
+    ]
+  },
+  "about": {
+    "title": "ABOUT US",
+    "intro": "EMOF Teknoloji is an engineering company specializing in high-precision CNC manufacturing processes for the aviation and defense industries. With innovative manufacturing techniques and a strong engineering infrastructure, we provide reliable, high-quality, and sustainable solutions to our customers.",
+    "stats": {
+      "employees": {
+        "value": "50+",
+        "label": "Employees"
+      },
+      "capacity": {
+        "value": "250,000+",
+        "label": "Annual Production Capacity"
+      },
+      "facility": {
+        "value": "5,000 m²",
+        "label": "Facility Area"
+      },
+      "programs": {
+        "value": "12",
+        "label": "Active Programs"
+      }
+    },
+    "body": "Thanks to modern production machinery, a competent engineering team, and quality-oriented process management, EMOF Teknoloji reliably manufactures the high-precision parts needed by the aviation sector. Adopting an approach of excellence in all steps from design to prototype, and from mass production to quality control processes, we have achieved a strong position as a solution partner in the industry."
+  }
+}

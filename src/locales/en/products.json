@@ -1,0 +1,39 @@
+{
+  "header": {
+    "label": "OUR PRODUCTS",
+    "title": "CNC & Aviation Part Portfolio",
+    "intro": "EMOF Teknoloji offers a wide product range including aircraft structures, engine components, and custom project parts."
+  },
+  "items": [
+    {
+      "name": "Airframe Components",
+      "code": "AERO-STRUCT",
+      "desc": "High-precision CNC machining for fuselage and structural components."
+    },
+    {
+      "name": "Titanium Fasteners",
+      "code": "TI-FAST",
+      "desc": "Lightweight and high-strength titanium fasteners."
+    },
+    {
+      "name": "CNC Machined Prototypes",
+      "code": "CNC-PROT",
+      "desc": "Low-volume, rapid prototype production for R&D projects."
+    },
+    {
+      "name": "Engine Components",
+      "code": "ENG-PARTS",
+      "desc": "Engine parts resistant to thermal and mechanical loads."
+    },
+    {
+      "name": "Shell & Bracket Parts",
+      "code": "BRKT-SHELL",
+      "desc": "Mounting brackets and support elements."
+    },
+    {
+      "name": "Custom Project Parts",
+      "code": "CUSTOM",
+      "desc": "Custom part production according to customer drawings."
+    }
+  ]
+}

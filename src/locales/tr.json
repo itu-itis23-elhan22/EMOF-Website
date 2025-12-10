@@ -79,6 +79,29 @@
           "desc": "Isıl yüke dayanıklı hassas motor bileşenleri."
         }
       ]
-    }
+    },
+    "about": {
+    "title": "HAKKIMIZDA",
+    "intro": "EMOF Teknoloji, havacılık ve savunma sanayii için yüksek hassasiyetli CNC üretim süreçlerinde uzmanlaşmış bir mühendislik şirketidir. Yenilikçi üretim teknikleri ve güçlü mühendislik altyapısı ile müşterilerimize güvenilir, kaliteli ve sürdürülebilir çözümler sunuyoruz.",
+    "stats": {
+      "employees": {
+        "value": "50+",
+        "label": "Çalışan Sayısı"
+      },
+      "capacity": {
+        "value": "250,000+",
+        "label": "Yıllık Üretim Kapasitesi"
+      },
+      "facility": {
+        "value": "5,000 m²",
+        "label": "Tesis Alanı"
+      },
+      "programs": {
+        "value": "12",
+        "label": "Aktif Program"
+      }
+    },
+    "body": "Modern üretim makineleri, yetkin mühendis ekibi ve kalite odaklı süreç yönetimi sayesinde EMOF Teknoloji, havacılık sektörünün ihtiyaç duyduğu yüksek hassasiyetli parçaları güvenilir şekilde üretmektedir. Tasarımdan prototipe, seri üretimden kalite kontrol süreçlerine kadar tüm adımlarda mükemmellik yaklaşımını benimseyerek sektörde güçlü bir çözüm ortağı konumu elde ettik."
+  }
   }
 }

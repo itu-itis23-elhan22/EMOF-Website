@@ -1,0 +1,31 @@
+{
+  "header": {
+    "label": "OUR QUALITY POLICIES",
+    "titleMain": "Aviation Manufacturing at",
+    "titleHighlight": " International Standards",
+    "intro": "EMOF Teknoloji adopts flight safety, quality, and occupational safety as priorities at every stage of its production. All our processes comply with AS9100, ISO 9001, and ISO 45001 standards."
+  },
+  "blocks": [
+    {
+      "title": "• Quality Management System",
+      "body": "Our production processes are designed according to the AS9100 quality standard, and part traceability, process control, and documentation management are executed at the highest level."
+    },
+    {
+      "title": "• Occupational Safety & Environmental Policy",
+      "body": "Employee health, environmental safety, and legal compliance are fundamental priorities in all our operations. We act with sustainable production principles."
+    },
+    {
+      "title": "• Continuous Improvement",
+      "body": "EMOF Teknoloji continuously improves quality and production efficiency by increasing R&D and modernization investments every year."
+    }
+  ],
+  "standards": {
+    "title": "Applied Standards",
+    "items": [
+      "AS9100 Rev.D Aviation Quality Standard",
+      "ISO 9001:2015 Quality Management System",
+      "ISO 45001 Occupational Health and Safety",
+      "Aviation supply chain requirements"
+    ]
+  }
+}

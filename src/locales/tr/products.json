@@ -1,0 +1,39 @@
+{
+  "header": {
+    "label": "ÜRÜNLERİMİZ",
+    "title": "CNC & Havacılık Parça Portföyü",
+    "intro": "EMOF Teknoloji, uçak yapıları, motor bileşenleri ve özel proje parçaları dahil olmak üzere geniş bir ürün yelpazesi sunar."
+  },
+  "items": [
+    {
+      "name": "Uçak Gövde Parçaları",
+      "code": "AERO-STRUCT",
+      "desc": "Gövde ve konstrüksiyon bileşenleri için yüksek hassasiyetli CNC işleme."
+    },
+    {
+      "name": "Titanyum Bağlantı Elemanları",
+      "code": "TI-FAST",
+      "desc": "Hafif ve yüksek mukavemetli titanyum bağlantı elemanları."
+    },
+    {
+      "name": "CNC İşlenmiş Prototipler",
+      "code": "CNC-PROT",
+      "desc": "Ar-Ge projeleri için düşük adetli, hızlı prototip üretimi."
+    },
+    {
+      "name": "Motor Bileşenleri",
+      "code": "ENG-PARTS",
+      "desc": "Isıl ve mekanik yüke dayanıklı motor parçaları."
+    },
+    {
+      "name": "Kabuk & Braket Parçalar",
+      "code": "BRKT-SHELL",
+      "desc": "Montaj braketleri ve destek elemanları."
+    },
+    {
+      "name": "Özel Proje Parçaları",
+      "code": "CUSTOM",
+      "desc": "Müşteri çizimlerine göre özel parça üretimi."
+    }
+  ]
+}

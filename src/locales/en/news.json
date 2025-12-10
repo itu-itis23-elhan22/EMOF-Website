@@ -1,0 +1,28 @@
+{
+  "header": {
+    "label": "NEWS",
+    "title": "Latest Developments & Announcements",
+    "intro": "Here you can follow all the innovations in our production, certification, and R&D processes at EMOF Teknoloji."
+  },
+  "detailLabel": "News Details →",
+  "items": [
+    {
+      "title": "EMOF Teknoloji Commissioned New CNC Production Line",
+      "date": "January 12, 2025",
+      "desc": "High-precision production capacity for the aviation sector has been increased.",
+      "img": "/news1.jpg"
+    },
+    {
+      "title": "ISO 9001 & ISO 45001 Certification Process Completed",
+      "date": "December 05, 2024",
+      "desc": "Compliance with international standards in quality management and occupational safety has been achieved.",
+      "img": "/news2.jpg"
+    },
+    {
+      "title": "New R&D Project Supported by TUBITAK",
+      "date": "November 20, 2024",
+      "desc": "Studies on advanced titanium alloys for aviation structural parts have begun.",
+      "img": "/news3.jpg"
+    }
+  ]
+}

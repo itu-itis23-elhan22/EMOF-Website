@@ -1,43 +1,17 @@
+"use client";
+
+import { useLanguage } from "../i18n/LanguageContext";
+import referencesTR from "../../locales/tr/references.json";
+import referencesEN from "../../locales/en/references.json";
+
+const referencesData = {
+  tr: referencesTR,
+  en: referencesEN,
+} as const;
+
 export default function ReferanslarPage() {
-  const sectors = [
-    {
-      title: "Ticari Havacılık",
-      desc: "Yolcu uçakları için gövde, bağlantı ve yapısal destek parçaları.",
-    },
-    {
-      title: "Savunma & Uzay",
-      desc: "İHA, helikopter ve uydu platformları için hassas işlenmiş bileşenler.",
-    },
-    {
-      title: "Endüstriyel Makina",
-      desc: "Yüksek dayanımlı mekanik sistemler için motor ve gövde elemanları.",
-    },
-  ];
-
-  const projects = [
-    {
-      name: "Yapısal Bağlantı Elemanları",
-      detail:
-        "Alüminyum ve titanyumdan üretilen, havacılık standardı bağlantı ve bracket parçaları.",
-    },
-    {
-      name: "Motor Destek Bileşenleri",
-      detail:
-        "Yüksek sıcaklık ve mekanik yüke dayanıklı, CNC işlenmiş motor komponentleri.",
-    },
-    {
-      name: "Prototip Gövde Panelleri",
-      detail:
-        "Yeni platformlar için düşük adetli, yüksek hassasiyetli gövde prototip parçaları.",
-    },
-  ];
-
-  const stats = [
-    { label: "Tamamlanan Proje", value: "80+" },
-    { label: "Teslim Edilen Parça", value: "5.000+" },
-    { label: "Zamanında Teslimat", value: "%98" },
-    { label: "Uluslararası Standart", value: "AS9100 & ISO" },
-  ];
+  const { lang } = useLanguage();
+  const data = referencesData[lang];
 
   return (
     <main className="bg-slate-950 min-h-screen py-24 px-6 text-white">
@@ -45,23 +19,21 @@ export default function ReferanslarPage() {
         {/* HEADER */}
         <section className="space-y-5">
           <p className="text-xs tracking-[0.35em] text-blue-400 uppercase">
-            REFERANSLAR
+            {data.header.label}
           </p>
 
           <h1 className="text-4xl md:text-5xl font-extrabold">
-            Güvenilir İş Ortaklıkları ve Proje Deneyimi
+            {data.header.title}
           </h1>
 
           <p className="text-slate-300 max-w-3xl text-sm md:text-base">
-            EMOF Teknoloji, havacılık ve savunma sanayii başta olmak üzere birçok
-            sektörde yüksek hassasiyetli üretim çözümleri sunmaktadır. Aşağıda,
-            hizmet verdiğimiz başlıca alanlar ve örnek proje tipleri yer almaktadır.
+            {data.header.intro}
           </p>
         </section>
 
         {/* STATS */}
         <section className="grid grid-cols-2 md:grid-cols-4 gap-6">
-          {stats.map((item) => (
+          {data.stats.map((item) => (
             <div
               key={item.label}
               className="bg-slate-900/70 border border-slate-800 rounded-2xl p-5 text-center shadow-lg"
@@ -78,9 +50,11 @@ export default function ReferanslarPage() {
 
         {/* SECTORS */}
         <section className="space-y-6">
-          <h2 className="text-2xl md:text-3xl font-bold">Hizmet Verdiğimiz Alanlar</h2>
+          <h2 className="text-2xl md:text-3xl font-bold">
+            {data.sectorsTitle}
+          </h2>
           <div className="grid md:grid-cols-3 gap-8">
-            {sectors.map((sector) => (
+            {data.sectors.map((sector) => (
               <div
                 key={sector.title}
                 className="bg-slate-900/60 border border-slate-800 rounded-2xl p-7 shadow-xl"
@@ -96,9 +70,11 @@ export default function ReferanslarPage() {
 
         {/* PROJECT TYPES */}
         <section className="space-y-6">
-          <h2 className="text-2xl md:text-3xl font-bold">Örnek Parça & Proje Tipleri</h2>
+          <h2 className="text-2xl md:text-3xl font-bold">
+            {data.projectsTitle}
+          </h2>
           <div className="grid md:grid-cols-3 gap-8">
-            {projects.map((p) => (
+            {data.projects.map((p) => (
               <div
                 key={p.name}
                 className="bg-slate-900/60 border border-slate-800 rounded-2xl p-7 shadow-xl"

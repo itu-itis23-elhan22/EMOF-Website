@@ -1,93 +1,42 @@
-export default function KadromuzPage() {
-  const stats = [
-    { label: "Toplam Çalışan", value: "54" },
-    { label: "Mühendis", value: "18" },
-    { label: "Teknisyen / Operatör", value: "26" },
-    { label: "Kalite & Destek", value: "10" },
-  ];
+"use client";
 
-  const teams = [
-    {
-      title: "Yönetim & Planlama",
-      desc: "Şirket stratejisi, proje yönetimi ve üretim planlamasından sorumlu ekip.",
-      roles: [
-        "Genel Müdür",
-        "Operasyon Yöneticisi",
-        "Üretim Planlama Uzmanları",
-      ],
-    },
-    {
-      title: "Mühendislik",
-      desc: "CNC işleme yöntemleri, proses tasarımı ve teknik dokümantasyon ekibi.",
-      roles: [
-        "Makine Mühendisleri",
-        "Havacılık Mühendisleri",
-        "Proses / İmalat Mühendisleri",
-        "Ar-Ge Mühendisleri",
-      ],
-    },
-    {
-      title: "Üretim & Operasyon",
-      desc: "CNC tezgahlarının işletilmesi, programlama ve saha uygulamaları.",
-      roles: [
-        "CNC Operatörleri",
-        "Takım Ayarcılar",
-        "Tezgah Programcıları",
-      ],
-    },
-    {
-      title: "Kalite & Sertifikasyon",
-      desc: "AS9100 ve havacılık gerekliliklerine uygun kalite yönetim süreçleri.",
-      roles: [
-        "Kalite Kontrol Uzmanları",
-        "CMM Operatörleri",
-        "Dokümantasyon / Sertifikasyon",
-      ],
-    },
-    {
-      title: "Lojistik & Depo",
-      desc: "Malzeme giriş-çıkışı, stok yönetimi ve sevkiyat organizasyonu.",
-      roles: [
-        "Lojistik Sorumluları",
-        "Depo Görevlileri",
-      ],
-    },
-    {
-      title: "Destek & İdari",
-      desc: "İnsan kaynakları, finans ve idari operasyonlar.",
-      roles: [
-        "İK Uzmanları",
-        "Finans / Muhasebe",
-        "İdari İşler",
-      ],
-    },
-  ];
+import { useLanguage } from "../i18n/LanguageContext";
+import teamTR from "../../locales/tr/team.json";
+import teamEN from "../../locales/en/team.json";
+
+const teamData = {
+  tr: teamTR,
+  en: teamEN,
+} as const;
+
+export default function KadromuzPage() {
+  const { lang } = useLanguage();
+  const data = teamData[lang];
 
   return (
     <main className="bg-slate-950 min-h-screen py-24 px-6 text-white">
       <div className="max-w-7xl mx-auto space-y-16">
-
         {/* HEADER */}
         <section className="space-y-5">
           <p className="text-xs tracking-[0.35em] text-blue-400 uppercase">
-            KADROMUZ
+            {data.header.label}
           </p>
 
           <h1 className="text-4xl md:text-5xl font-extrabold">
-            Uzman Ekibimizle  
-            <span className="text-blue-400"> Havacılık Üretimine Güç Katıyoruz</span>
+            {data.header.titleMain}
+            <span className="text-blue-400">
+              {data.header.titleHighlight}
+            </span>
           </h1>
 
           <p className="text-slate-300 max-w-3xl text-sm md:text-base">
-            EMOF Teknoloji; mühendislik, üretim, kalite ve destek birimlerinden oluşan
-            disiplinli ve deneyimli bir ekip yapısına sahiptir. Her çalışanımız, havacılık
-            standartlarına uygun üretim hedefiyle hareket eder.
+            {data.header.intro}
           </p>
         </section>
 
         {/* STATS */}
         <section className="grid grid-cols-2 md:grid-cols-4 gap-6">
-          {stats.map((item) => (
+          {data.stats.map((item) => (
             <div
               key={item.label}
               className="bg-slate-900/70 border border-slate-800 rounded-2xl p-5 text-center shadow-lg"
@@ -105,11 +54,11 @@ export default function KadromuzPage() {
         {/* TEAMS GRID */}
         <section className="space-y-8">
           <h2 className="text-2xl md:text-3xl font-bold">
-            Ekip Yapımız
+            {data.teamsTitle}
           </h2>
 
           <div className="grid md:grid-cols-2 gap-8">
-            {teams.map((team) => (
+            {data.teams.map((team) => (
               <div
                 key={team.title}
                 className="bg-slate-900/60 border border-slate-800 rounded-2xl p-7 shadow-xl hover:border-blue-500/70 hover:-translate-y-1 transition"
@@ -129,7 +78,6 @@ export default function KadromuzPage() {
             ))}
           </div>
         </section>
-
       </div>
     </main>
   );

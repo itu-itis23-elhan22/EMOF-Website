@@ -1,21 +1,27 @@
-// app/layout.tsx
 import "./globals.css";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 import { LanguageProvider } from "./i18n/LanguageContext";
+import type { ReactNode } from "react";
 
+export const metadata = {
+  title: "EMOF Teknoloji",
+  description: "CNC & Havacılık Üretim Teknolojileri",
+};
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: ReactNode;
+}) {
   return (
     <html lang="tr">
-      <body>
-                <LanguageProvider>
-
-        <Navbar />
-        <div className="pt-20">
-          {children}
-        </div>
-                </LanguageProvider>
-
+      <body className="bg-slate-950 text-white">
+        <LanguageProvider>
+          <Navbar />
+          <main>{children}</main>
+          <Footer />
+        </LanguageProvider>
       </body>
     </html>
   );

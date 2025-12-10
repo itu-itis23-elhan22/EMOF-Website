@@ -1,0 +1,43 @@
+{
+  "header": {
+    "label": "İLETİŞİM",
+    "title": "Bizimle İletişime Geçin",
+    "intro": "EMOF Teknoloji olarak tüm soru ve taleplerinizi memnuniyetle karşılıyoruz. Aşağıdaki kanallardan bize ulaşabilir veya formu doldurabilirsiniz."
+  },
+  "cards": {
+    "address": {
+      "title": "📍 Adres",
+      "company": "EMOF Teknoloji",
+      "line1": "Ankara Uzay & Havacılık Sanayi Bölgesi",
+      "line2": "Türkiye"
+    },
+    "phone": {
+      "title": "☎️ Telefon",
+      "number": "+90 (312) 000 00 00",
+      "whatsappLabel": "WhatsApp ile iletişime geç",
+      "whatsappUrl": "https://wa.me/905452650705"
+    },
+    "email": {
+      "title": "✉️ E-posta",
+      "address": "info@emofteknoloji.com",
+      "workingHoursTitle": "Çalışma Saatleri",
+      "workingHoursLines": [
+        "Pazartesi – Cuma",
+        "09:00 – 18:00"
+      ]
+    }
+  },
+  "form": {
+    "title": "Bize Mesaj Gönderin",
+    "fields": {
+      "name": "Adınız",
+      "email": "E-posta adresiniz",
+      "subject": "Konu",
+      "message": "Mesajınız"
+    },
+    "submit": "Gönder"
+  },
+  "map": {
+    "src": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3065.876389978393!2d32.8597414!3d39.9333634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14d34f5cef2b3c4b%3A0x5c6a6e58f35b706e!2sAnkara!5e0!3m2!1str!2str!4v1700000000000"
+  }
+}

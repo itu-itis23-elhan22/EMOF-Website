@@ -1,0 +1,25 @@
+{
+  "header": {
+    "label": "SERTİFİKALAR",
+    "title": "Kalite & Havacılık Sertifikalarımız",
+    "intro": "EMOF Teknoloji, uluslararası standartlara uygun üretim yapan ve sektör gerekliliklerini karşılayan kalite yönetim sistemlerine sahiptir."
+  },
+  "items": [
+    {
+      "name": "ISO 9001:2015",
+      "desc": "Kalite yönetim sistemi sertifikası."
+    },
+    {
+      "name": "AS9100",
+      "desc": "Havacılık ve uzay sanayii için kalite yönetim standardı."
+    },
+    {
+      "name": "ISO 14001",
+      "desc": "Çevre yönetim sistemi sertifikası."
+    },
+    {
+      "name": "ISO 45001",
+      "desc": "İş sağlığı ve güvenliği yönetim sistemi sertifikası."
+    }
+  ]
+}

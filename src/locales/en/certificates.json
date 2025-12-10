@@ -1,0 +1,25 @@
+{
+  "header": {
+    "label": "CERTIFICATES",
+    "title": "Our Quality & Aviation Certificates",
+    "intro": "EMOF Teknoloji possesses quality management systems that produce in compliance with international standards and meet industry requirements."
+  },
+  "items": [
+    {
+      "name": "ISO 9001:2015",
+      "desc": "Quality management system certificate."
+    },
+    {
+      "name": "AS9100",
+      "desc": "Quality management standard for the aerospace industry."
+    },
+    {
+      "name": "ISO 14001",
+      "desc": "Environmental management system certificate."
+    },
+    {
+      "name": "ISO 45001",
+      "desc": "Occupational health and safety management system certificate."
+    }
+  ]
+}

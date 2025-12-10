@@ -8,16 +8,33 @@ import {
   ReactNode,
 } from "react";
 
-import tr from "../../locales/tr.json";
-import en from "../../locales/en.json";
+// Çoklu JSON dosyalarını import ediyoruz
+import navbarTR from "../../locales/tr/navbar.json";
+import heroTR from "../../locales/tr/hero.json";
+import homeTR from "../../locales/tr/home.json";
 
+import navbarEN from "../../locales/en/navbar.json";
+import heroEN from "../../locales/en/hero.json";
+import homeEN from "../../locales/en/home.json";
+
+// Dil tipi
 type Lang = "tr" | "en";
-type Messages = typeof tr;
 
-const dictionaries: Record<Lang, Messages> = {
-  tr,
-  en,
-};
+// Tüm JSON'ları tek birleştirilmiş obje hâline getiriyoruz
+const dictionaries = {
+  tr: {
+    navbar: navbarTR,
+    hero: heroTR,
+    home: homeTR,
+  },
+  en: {
+    navbar: navbarEN,
+    hero: heroEN,
+    home: homeEN,
+  },
+} as const;
+
+type Dictionary = typeof dictionaries.tr;
 
 interface LanguageContextValue {
   lang: Lang;
@@ -40,10 +57,9 @@ function getNested(obj: any, path: string) {
 }
 
 export function LanguageProvider({ children }: { children: ReactNode }) {
-  // default TR
   const [lang, setLangState] = useState<Lang>("tr");
 
-  // İlk açılışta: sadece localStorage'daki değeri dikkate al
+  // İlk açılışta localStorage kontrolü
   useEffect(() => {
     if (typeof window === "undefined") return;
 
@@ -51,7 +67,6 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
     if (stored === "tr" || stored === "en") {
       setLangState(stored);
     }
-    // stored yoksa zaten "tr" olarak kalıyor
   }, []);
 
   const setLang = (value: Lang) => {
@@ -62,17 +77,17 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
   };
 
   const t = (key: string): string => {
-    const dict = dictionaries[lang] ?? dictionaries.tr;
+    const dict: Dictionary = dictionaries[lang];
 
-    // 1) Önce nested key dene: "navbar.corporate" → dict.navbar.corporate
+    // nested lookup (örn: "navbar.tabs.corporate")
     const nested = getNested(dict, key);
     if (typeof nested === "string") return nested;
 
-    // 2) Olmazsa flat key dene: dict["navbar.corporate"]
+    // fallback olarak flat lookup dene
     const flat = (dict as any)[key];
     if (typeof flat === "string") return flat;
 
-    // 3) Hiçbiri yoksa key'i aynen döndür
+    // hiç bulunamazsa key'i aynı döndür
     return key;
   };
 

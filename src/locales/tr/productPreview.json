@@ -1,0 +1,28 @@
+{
+  "label": "ÜRÜNLERİMİZ",
+  "title": "CNC & Havacılık Parça Çözümleri",
+  "description": "Seri üretimden özel projelere kadar, havacılık standartlarına uygun hassas işlenmiş parçalar sunuyoruz.",
+  "cta": "Tüm Ürünleri Gör",
+  "products": [
+    {
+      "name": "Uçak Gövde Parçaları",
+      "code": "AERO-STRUCT",
+      "desc": "Havacılık standartlarında işlenmiş gövde ve konstrüksiyon bileşenleri."
+    },
+    {
+      "name": "Titanyum Bağlantı Elemanları",
+      "code": "TI-FAST",
+      "desc": "Yüksek mukavemetli, korozyona dayanıklı bağlantı çözümleri."
+    },
+    {
+      "name": "CNC İşlenmiş Prototipler",
+      "code": "CNC-PROT",
+      "desc": "Düşük adetli, yüksek hassasiyetli prototip üretimi."
+    },
+    {
+      "name": "Motor Bileşenleri",
+      "code": "ENG-PARTS",
+      "desc": "Isıl ve mekanik yüke dayanıklı hassas motor bileşenleri."
+    }
+  ]
+}

@@ -41,26 +41,26 @@ export default function Navbar() {
             <span className="animate-letter-4">F</span>
           </span>
 
-          <span className="text-blue-500">Teknoloji</span>
+          <span className="text-blue-500">{t("navbar.tabs.main-name")}</span>
         </Link>
 
         {/* MENU */}
         <div className="flex items-center gap-10 text-white font-medium">
           {/* ---------------- KURUMSAL ---------------- */}
-          <div
-            className="relative group"
-            onMouseEnter={() => setOpenMenu("kurumsal")}
-          >
-            <button className="hover:text-blue-400 transition text-lg tracking-wide">
-              {t("navbar.tabs.corporate")}
-            </button>
+<div
+  className="relative group"
+  onMouseEnter={() => setOpenMenu("kurumsal")}
+>
+  <button className="hover:text-blue-400 transition text-lg tracking-wide">
+    {t("navbar.tabs.corporate")}
+  </button>
 
-            {/* underline: sadece hover ile kontrol */}
-            <div className="h-[2px] bg-blue-500 w-0 group-hover:w-full transition-all duration-300" />
+  {/* underline */}
+  <div className="h-[2px] bg-blue-500 w-0 group-hover:w-full transition-all duration-300" />
 
-            {/* Mega menu */}
-            <div
-              className={`
+  {/* Mega menu */}
+  <div
+    className={`
       absolute left-1/2 -translate-x-1/2
       mt-2 pt-4
       w-[1000px] bg-slate-900 text-white shadow-xl rounded-md py-10 px-10
@@ -71,78 +71,64 @@ export default function Navbar() {
           : "invisible opacity-0 translate-y-3 pointer-events-none"
       }
     `}
-            >
-              <div className="grid grid-cols-4 gap-10">
-                {/* HAKKIMIZDA */}
-                <Link
-                  href="/#hakkimizda"
-                  onClick={() => setOpenMenu(null)}
-                  className="group block text-center rounded-xl border px-6 py-6 transition-all duration-300
+  >
+    <div className="grid grid-cols-3 item-stretch">
+      {/* ✅ KABİLİYETLERİMİZ (eski Hakkımızda yerine geçti) */}
+      <Link
+        href="/kabiliyetler"
+        onClick={() => setOpenMenu(null)}
+        className="group block text-center rounded-xl border px-6 py-6 transition-all duration-300
                    bg-slate-900/40 border-slate-700
                    hover:bg-slate-800 hover:border-blue-500 hover:scale-[1.05] hover:shadow-xl"
-                >
-                  <FaHome className="text-5xl mx-auto text-blue-500 group-hover:scale-110 transition" />
-                  <h3 className="mt-4 text-xl font-bold group-hover:text-blue-400 transition">
-                    {t("navbar.corporate.cards.about.title")}
-                  </h3>
-                  <p className="mt-2 text-gray-300 text-sm">
-                    {t("navbar.corporate.cards.about.subtitle")}
-                  </p>
-                </Link>
+      >
+        <FaCogs className="text-5xl mx-auto text-blue-500 group-hover:scale-110 transition" />
+        <h3 className="mt-4 text-xl font-bold group-hover:text-blue-400 transition">
+          {t("navbar.corporate.cards.capabilities.title")}
+        </h3>
+        <p className="mt-2 text-gray-300 text-sm">
+          {t("navbar.corporate.cards.capabilities.subtitle")}
+        </p>
+      </Link>
 
-                {/* VİZYONUMUZ */}
-                <Link
-                  href="/vizyon"
-                  onClick={() => setOpenMenu(null)}
-                  className="group block text-center rounded-xl border px-6 py-6 transition-all duration-300
+      {/* VİZYONUMUZ */}
+      <Link
+        href="/vizyon"
+        onClick={() => setOpenMenu(null)}
+        className="group block text-center rounded-xl border px-6 py-6 transition-all duration-300
                    bg-slate-900/40 border-slate-700
                    hover:bg-slate-800 hover:border-blue-500 hover:scale-[1.05] hover:shadow-xl"
-                >
-                  <FaFlag className="text-5xl mx-auto text-blue-500 group-hover:scale-110 transition" />
-                  <h3 className="mt-4 text-xl font-bold group-hover:text-blue-400 transition">
-                    {t("navbar.corporate.cards.vision.title")}
-                  </h3>
-                  <p className="mt-2 text-gray-300 text-sm">
-                    {t("navbar.corporate.cards.vision.subtitle")}
-                  </p>
-                </Link>
+      >
+        <FaFlag className="text-5xl mx-auto text-blue-500 group-hover:scale-110 transition" />
+        <h3 className="mt-4 text-xl font-bold group-hover:text-blue-400 transition">
+          {t("navbar.corporate.cards.vision.title")}
+        </h3>
+        <p className="mt-2 text-gray-300 text-sm">
+          {t("navbar.corporate.cards.vision.subtitle")}
+        </p>
+      </Link>
 
-                {/* POLİTİKALARIMIZ */}
-                <Link
-                  href="/politikalar"
-                  onClick={() => setOpenMenu(null)}
-                  className="group block text-center rounded-xl border px-6 py-6 transition-all duration-300
+      {/* POLİTİKALARIMIZ */}
+      <Link
+        href="/politikalar"
+        onClick={() => setOpenMenu(null)}
+        className="group block text-center rounded-xl border px-6 py-6 transition-all duration-300
                    bg-slate-900/40 border-slate-700
                    hover:bg-slate-800 hover:border-blue-500 hover:scale-[1.05] hover:shadow-xl"
-                >
-                  <FaFileAlt className="text-5xl mx-auto text-blue-500 group-hover:scale-110 transition" />
-                  <h3 className="mt-4 text-xl font-bold group-hover:text-blue-400 transition">
-                    {t("navbar.corporate.cards.policies.title")}
-                  </h3>
-                  <p className="mt-2 text-gray-300 text-sm">
-                    {t("navbar.corporate.cards.policies.subtitle")}
-                  </p>
-                </Link>
+      >
+        <FaFileAlt className="text-5xl mx-auto text-blue-500 group-hover:scale-110 transition" />
+        <h3 className="mt-4 text-xl font-bold group-hover:text-blue-400 transition">
+          {t("navbar.corporate.cards.policies.title")}
+        </h3>
+        <p className="mt-2 text-gray-300 text-sm">
+          {t("navbar.corporate.cards.policies.subtitle")}
+        </p>
+      </Link>
 
-                {/* REFERANSLAR */}
-                <Link
-                  href="/referanslar"
-                  onClick={() => setOpenMenu(null)}
-                  className="group block text-center rounded-xl border px-6 py-6 transition-all duration-300
-                   bg-slate-900/40 border-slate-700
-                   hover:bg-slate-800 hover:border-blue-500 hover:scale-[1.05] hover:shadow-xl"
-                >
-                  <FaHandshake className="text-5xl mx-auto text-blue-500 group-hover:scale-110 transition" />
-                  <h3 className="mt-4 text-xl font-bold group-hover:text-blue-400 transition">
-                    {t("navbar.corporate.cards.references.title")}
-                  </h3>
-                  <p className="mt-2 text-gray-300 text-sm">
-                    {t("navbar.corporate.cards.references.subtitle")}
-                  </p>
-                </Link>
-              </div>
-            </div>
-          </div>
+     
+    </div>
+  </div>
+</div>
+
 
           {/* ---------------- ÜRÜNLERİMİZ ---------------- */}
           <div
@@ -170,7 +156,7 @@ export default function Navbar() {
       }
     `}
             >
-              <div className="grid grid-cols-3 gap-10">
+              <div className="grid grid-cols-4 gap-10">
                 <Link
                   href="/urunler"
                   onClick={() => setOpenMenu(null)}
@@ -202,7 +188,22 @@ export default function Navbar() {
                     {t("navbar.productsMenu.cards.certificates.subtitle")}
                   </p>
                 </Link>
-
+ {/* REFERANSLAR */}
+      <Link
+        href="/referanslar"
+        onClick={() => setOpenMenu(null)}
+        className="group block text-center rounded-xl border px-6 py-6 transition-all duration-300
+                   bg-slate-900/40 border-slate-700
+                   hover:bg-slate-800 hover:border-blue-500 hover:scale-[1.05] hover:shadow-xl"
+      >
+        <FaHandshake className="text-5xl mx-auto text-blue-500 group-hover:scale-110 transition" />
+        <h3 className="mt-4 text-xl font-bold group-hover:text-blue-400 transition">
+          {t("navbar.corporate.cards.references.title")}
+        </h3>
+        <p className="mt-2 text-gray-300 text-sm">
+          {t("navbar.corporate.cards.references.subtitle")}
+        </p>
+      </Link>
                 <div className="group block text-center rounded-xl border px-6 py-6 bg-slate-900/40 border-slate-700 opacity-40">
                   <FaCogs className="text-5xl mx-auto text-slate-600" />
                   <h3 className="mt-4 text-xl font-bold text-slate-500">

@@ -1,0 +1,83 @@
+{
+  "header": {
+    "label": "OUR TEAM",
+    "titleMain": "With Our Expert Team,",
+    "titleHighlight": " We Power Aviation Manufacturing",
+    "intro": "EMOF Teknoloji possesses a disciplined and experienced team structure consisting of engineering, production, quality, and support units. Every employee acts with the goal of production complying with aviation standards."
+  },
+  "stats": [
+    {
+      "label": "Total Employees",
+      "value": "54"
+    },
+    {
+      "label": "Engineers",
+      "value": "18"
+    },
+    {
+      "label": "Technicians / Operators",
+      "value": "26"
+    },
+    {
+      "label": "Quality & Support",
+      "value": "10"
+    }
+  ],
+  "teamsTitle": "Our Team Structure",
+  "teams": [
+    {
+      "title": "Management & Planning",
+      "desc": "Team responsible for company strategy, project management, and production planning.",
+      "roles": [
+        "General Manager",
+        "Operations Manager",
+        "Production Planning Specialists"
+      ]
+    },
+    {
+      "title": "Engineering",
+      "desc": "CNC machining methods, process design, and technical documentation team.",
+      "roles": [
+        "Mechanical Engineers",
+        "Aerospace Engineers",
+        "Process / Manufacturing Engineers",
+        "R&D Engineers"
+      ]
+    },
+    {
+      "title": "Production & Operations",
+      "desc": "Operation of CNC machines, programming, and field applications.",
+      "roles": [
+        "CNC Operators",
+        "Tool Setters",
+        "Machine Programmers"
+      ]
+    },
+    {
+      "title": "Quality & Certification",
+      "desc": "Quality management processes in compliance with AS9100 and aviation requirements.",
+      "roles": [
+        "Quality Control Specialists",
+        "CMM Operators",
+        "Documentation / Certification"
+      ]
+    },
+    {
+      "title": "Logistics & Warehouse",
+      "desc": "Material receiving/shipping, stock management, and shipment organization.",
+      "roles": [
+        "Logistics Officers",
+        "Warehouse Personnel"
+      ]
+    },
+    {
+      "title": "Support & Admin",
+      "desc": "Human resources, finance, and administrative operations.",
+      "roles": [
+        "HR Specialists",
+        "Finance / Accounting",
+        "Administrative Affairs"
+      ]
+    }
+  ]
+}

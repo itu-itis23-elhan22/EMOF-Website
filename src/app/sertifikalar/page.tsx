@@ -1,44 +1,37 @@
+"use client";
+
+import { useLanguage } from "../i18n/LanguageContext";
+import certificatesTR from "../../locales/tr/certificates.json";
+import certificatesEN from "../../locales/en/certificates.json";
+
 import { FaCertificate } from "react-icons/fa";
 
-const certificates = [
-  {
-    name: "ISO 9001:2015",
-    desc: "Kalite yönetim sistemi sertifikası.",
-  },
-  {
-    name: "AS9100",
-    desc: "Havacılık ve uzay sanayii için kalite yönetim standardı.",
-  },
-  {
-    name: "ISO 14001",
-    desc: "Çevre yönetim sistemi sertifikası.",
-  },
-  {
-    name: "ISO 45001",
-    desc: "İş sağlığı ve güvenliği yönetim sistemi sertifikası.",
-  },
-];
+const certificatesData = {
+  tr: certificatesTR,
+  en: certificatesEN, // Şimdilik EN de TR ile aynı; sonradan en/certificates.json ekleyebilirsin
+} as const;
 
 export default function CertificatesPage() {
+  const { lang } = useLanguage();
+  const data = certificatesData[lang];
+
   return (
     <main className="bg-slate-950 min-h-screen py-16">
       <div className="max-w-7xl mx-auto px-6 space-y-10">
         <header className="space-y-3">
           <p className="text-xs tracking-[0.3em] uppercase text-blue-400">
-            SERTİFİKALAR
+            {data.header.label}
           </p>
           <h1 className="text-3xl md:text-4xl font-bold text-white">
-            Kalite & Havacılık Sertifikalarımız
+            {data.header.title}
           </h1>
           <p className="text-slate-300 max-w-2xl text-sm md:text-base">
-            EMOF Teknoloji, uluslararası standartlara uygun üretim yapan ve
-            sektör gerekliliklerini karşılayan kalite yönetim sistemlerine
-            sahiptir.
+            {data.header.intro}
           </p>
         </header>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {certificates.map((c) => (
+          {data.items.map((c) => (
             <div
               key={c.name}
               className="bg-slate-900/80 border border-slate-800 rounded-2xl p-5 shadow-lg hover:-translate-y-1 hover:border-blue-500/70 transition"

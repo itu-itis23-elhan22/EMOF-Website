@@ -1,0 +1,89 @@
+{
+  "header": {
+    "label": "KABİLİYETLERİMİZ",
+    "title": "Makine Parkı & Üretim Kapasitesi",
+    "subtitle": "Havacılık ve savunma sanayii için yüksek hassasiyetli CNC işleme kabiliyetlerimiz."
+  },
+  "summary": {
+    "description": "EMOF Teknoloji, 3 ve 5 eksen CNC tezgahları, CMM ölçüm altyapısı ve havacılık odaklı proses mühendisliği ile kritik parçaların üretiminde uçtan uca çözüm sunar."
+  },
+  "stats": [
+    {
+      "label": "EKSEN ARALIĞI",
+      "value": "3 – 5 Eksen"
+    },
+    {
+      "label": "MAKS. İŞLEME HACMİ",
+      "value": "1.200 x 600 x 500 mm"
+    },
+    {
+      "label": "TİPİK TOLERANS",
+      "value": "± 0.01 mm"
+    },
+    {
+      "label": "ÖLÇÜM HASSASİYETİ",
+      "value": "0.003 mm CMM"
+    }
+  ],
+  "sections": {
+    "machining": {
+      "title": "CNC İşleme Kabiliyetleri",
+      "items": [
+        "3 ve 5 eksen dik işleme merkezleri",
+        "Alüminyum, çelik, titanyum ve nikel alaşımlarının işlenmesi",
+        "Tek parça prototipten seri üretime ölçeklenebilir kapasite",
+        "Takım ömrü ve proses stabilitesi odaklı proses mühendisliği"
+      ]
+    },
+    "quality": {
+      "title": "Ölçüm & Kalite Altyapısı",
+      "items": [
+        "CMM ile tam boyutlu ölçüm ve raporlama",
+        "İzlenebilir ölçü aletleri ve periyodik kalibrasyon",
+        "AS9100 uyumlu dokümantasyon ve kayıt yönetimi",
+        "İlk parça onayı (FAI) ve müşteri şartnamelerine göre doğrulama"
+      ]
+    },
+    "materials": {
+      "title": "Malzeme & Uygulama Alanları",
+      "items": [
+        "Havacılık sınıfı alüminyum dökümler ve plakalar",
+        "Titanyum bağlantı ve yapısal parçalar",
+        "Çelik ve paslanmaz çelik dayanım parçaları",
+        "İHA, helikopter, uydu ve endüstriyel makine uygulamaları"
+      ]
+    }
+  },
+  "machinesTitle": "Makine Parkı Örneği",
+  "machines": [
+    {
+      "name": "5 Eksen Dik İşleme Merkezi",
+      "type": "Yüksek hassasiyetli, tam kapalı kabin",
+      "travel": "X: 800 mm • Y: 600 mm • Z: 500 mm",
+      "notes": "Havacılık yapısal parçaları ve kompleks geometriler için uygundur."
+    },
+    {
+      "name": "3 Eksen Dik İşleme Merkezi",
+      "type": "Seri üretim odaklı dik işleme merkezi",
+      "travel": "X: 1.200 mm • Y: 600 mm • Z: 500 mm",
+      "notes": "Orta–büyük boyutlu gövde ve braket parçaları için."
+    },
+    {
+      "name": "CNC Torna Merkezi",
+      "type": "Mil, ring ve dönel parçalar için CNC torna",
+      "travel": "Çap: 300 mm • Boy: 600 mm",
+      "notes": "Bağlantı elemanları ve flanş tipi parçalar için idealdir."
+    },
+    {
+      "name": "3D CMM Ölçüm Cihazı",
+      "type": "Tam otomatik koordinat ölçüm cihazı",
+      "travel": "X: 700 mm • Y: 600 mm • Z: 500 mm",
+      "notes": "Kritik ölçüler için raporlu, izlenebilir ölçüm imkanı."
+    }
+  ],
+  "cta": {
+    "title": "Parçalarınız için doğru kabiliyeti mi arıyorsunuz?",
+    "text": "Teknik resimlerinizi ve proje gerekliliklerinizi bizimle paylaşın; havacılık standartlarına uygun üretim için en uygun proses ve maliyet yapısını birlikte planlayalım.",
+    "button": "Teklif Talep Et"
+  }
+}

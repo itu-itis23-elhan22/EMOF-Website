@@ -1,0 +1,89 @@
+{
+  "header": {
+    "label": "OUR CAPABILITIES",
+    "title": "Machine Park & Production Capacity",
+    "subtitle": "High-precision CNC machining capabilities for the aviation and defense industries."
+  },
+  "summary": {
+    "description": "EMOF Teknoloji provides end-to-end solutions for the production of critical parts with 3 and 5-axis CNC machines, CMM measurement infrastructure, and aviation-focused process engineering."
+  },
+  "stats": [
+    {
+      "label": "AXIS RANGE",
+      "value": "3 – 5 Axis"
+    },
+    {
+      "label": "MAX. MACHINING VOLUME",
+      "value": "1,200 x 600 x 500 mm"
+    },
+    {
+      "label": "TYPICAL TOLERANCE",
+      "value": "± 0.01 mm"
+    },
+    {
+      "label": "MEASUREMENT ACCURACY",
+      "value": "0.003 mm CMM"
+    }
+  ],
+  "sections": {
+    "machining": {
+      "title": "CNC Machining Capabilities",
+      "items": [
+        "3 and 5-axis vertical machining centers",
+        "Machining of aluminum, steel, titanium, and nickel alloys",
+        "Scalable capacity from single-piece prototypes to mass production",
+        "Process engineering focused on tool life and process stability"
+      ]
+    },
+    "quality": {
+      "title": "Measurement & Quality Infrastructure",
+      "items": [
+        "Full-dimensional measurement and reporting with CMM",
+        "Traceable measuring instruments and periodic calibration",
+        "AS9100 compliant documentation and record management",
+        "First Article Inspection (FAI) and verification according to customer specifications"
+      ]
+    },
+    "materials": {
+      "title": "Materials & Application Areas",
+      "items": [
+        "Aviation-grade aluminum castings and plates",
+        "Titanium fasteners and structural parts",
+        "Steel and stainless steel endurance parts",
+        "UAV, helicopter, satellite, and industrial machinery applications"
+      ]
+    }
+  },
+  "machinesTitle": "Machine Park Examples",
+  "machines": [
+    {
+      "name": "5-Axis Vertical Machining Center",
+      "type": "High-precision, fully enclosed cabin",
+      "travel": "X: 800 mm • Y: 600 mm • Z: 500 mm",
+      "notes": "Suitable for aviation structural parts and complex geometries."
+    },
+    {
+      "name": "3-Axis Vertical Machining Center",
+      "type": "Mass production-oriented vertical machining center",
+      "travel": "X: 1,200 mm • Y: 600 mm • Z: 500 mm",
+      "notes": "For medium-large sized fuselage and bracket parts."
+    },
+    {
+      "name": "CNC Turning Center",
+      "type": "CNC turning for shafts, rings, and rotational parts",
+      "travel": "Dia: 300 mm • Length: 600 mm",
+      "notes": "Ideal for fasteners and flange-type parts."
+    },
+    {
+      "name": "3D CMM Measurement Device",
+      "type": "Fully automatic coordinate measuring machine",
+      "travel": "X: 700 mm • Y: 600 mm • Z: 500 mm",
+      "notes": "Reported, traceable measurement capability for critical dimensions."
+    }
+  ],
+  "cta": {
+    "title": "Are you looking for the right capability for your parts?",
+    "text": "Share your technical drawings and project requirements with us; let's plan the most suitable process and cost structure together for production complying with aviation standards.",
+    "button": "Request a Quote"
+  }
+}
