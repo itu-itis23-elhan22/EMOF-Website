@@ -34,6 +34,37 @@
       "name": "Custom Project Parts",
       "code": "CUSTOM",
       "desc": "Custom part production according to customer drawings."
-    }
+    },
+  {
+    "name": "Landing Gear Components",
+    "code": "LND-GEAR",
+    "desc": "High-strength machined parts used in aircraft landing gears."
+  },
+  {
+    "name": "Composite Mold Elements",
+    "code": "CMP-MOLD",
+    "desc": "Mold parts with precision surfaces for composite production processes."
+  },
+  {
+    "name": "Fuel System Parts",
+    "code": "FUEL-SYS",
+    "desc": "Precision machined fittings ensuring fuel flow and safety."
+  },
+  {
+    "name": "Hydraulic System Components",
+    "code": "HYDRO-PART",
+    "desc": "Parts focused on sealing and durability for hydraulic control units."
+  },
+  {
+    "name": "Electronic Box & Enclosure Parts",
+    "code": "ELEC-HOUS",
+    "desc": "Protective aluminum enclosure parts for aviation electronics (avionics)."
+  },
+  {
+    "name": "Helicopter Airframe Connection Elements",
+    "code": "HELI-FAST",
+    "desc": "Connection and load-bearing elements used in helicopter structures."
+  }
+
   ]
 }

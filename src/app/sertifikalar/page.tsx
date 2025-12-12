@@ -3,6 +3,7 @@
 import { useLanguage } from "../i18n/LanguageContext";
 import certificatesTR from "../../locales/tr/certificates.json";
 import certificatesEN from "../../locales/en/certificates.json";
+import PageTransition from "../components/PageTransition";
 
 import { FaCertificate } from "react-icons/fa";
 
@@ -16,6 +17,8 @@ export default function CertificatesPage() {
   const data = certificatesData[lang];
 
   return (
+        <PageTransition>
+    
     <main className="bg-slate-950 min-h-screen py-16">
       <div className="max-w-7xl mx-auto px-6 space-y-10">
         <header className="space-y-3">
@@ -50,5 +53,7 @@ export default function CertificatesPage() {
         </div>
       </div>
     </main>
+        </PageTransition>
+    
   );
 }

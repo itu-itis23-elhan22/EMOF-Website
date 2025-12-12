@@ -31,11 +31,11 @@ export default function Navbar() {
       onMouseLeave={() => setOpenMenu(null)}
     >
       <div className="max-w-7xl mx-auto px-8 py-5 flex items-center justify-between">
-
         {/* LOGO */}
         <Link
           href="/"
           className="text-3xl font-extrabold tracking-wide flex items-center gap-2"
+          onMouseEnter={()=>setOpenMenu(null)}
         >
           <span className="flex text-white">
             <span className="animate-letter-1">E</span>
@@ -44,15 +44,9 @@ export default function Navbar() {
             <span className="animate-letter-4">F</span>
           </span>
 
-          <span
-            className="
-              bg-gradient-to-r
-              from-blue-400 via-blue-500 to-cyan-400
-              bg-clip-text text-transparent
-            "
-          >
-            {t("navbar.tabs.main-name")}
-          </span>            
+          <span className="bg-gradient-to-r from-blue-400 via-blue-500 to-cyan-400 bg-clip-text text-transparent">
+  {t("navbar.tabs.main-name")}
+</span>
         </Link>
 
         {/* ⭐ MOBILE MENU BUTONU — SADECE MOBİLDE GÖRÜNÜR */}
@@ -65,7 +59,6 @@ export default function Navbar() {
 
         {/* MENU (DESKTOP) — ⭐ Mobilde gizlendi */}
         <div className="hidden md:flex items-center gap-10 text-white font-medium">
-          
           {/* ---------------- KURUMSAL ---------------- */}
           <div
             className="relative group"
@@ -79,6 +72,7 @@ export default function Navbar() {
 
             {/* Mega menu */}
             <div
+              onMouseLeave={() => setOpenMenu(null)}
               className={`
                 absolute left-1/2 -translate-x-1/2
                 mt-2 pt-4
@@ -92,7 +86,6 @@ export default function Navbar() {
               `}
             >
               <div className="grid grid-cols-3 gap-8">
-
                 {/* KABİLİYETLERİMİZ */}
                 <Link
                   href="/kabiliyetler"
@@ -100,7 +93,9 @@ export default function Navbar() {
                   className="group block text-center rounded-xl border px-8 py-8 transition-all bg-slate-900/40 border-slate-700 hover:bg-slate-800 hover:border-blue-500 hover:scale-[1.05] hover:shadow-xl"
                 >
                   <FaCogs className="text-6xl mx-auto text-blue-500" />
-                  <h3 className="mt-4 text-xl font-bold">{t("navbar.corporate.cards.capabilities.title")}</h3>
+                  <h3 className="mt-4 text-xl font-bold">
+                    {t("navbar.corporate.cards.capabilities.title")}
+                  </h3>
                   <p className="mt-2 text-gray-300 text-sm">
                     {t("navbar.corporate.cards.capabilities.subtitle")}
                   </p>
@@ -113,7 +108,9 @@ export default function Navbar() {
                   className="group block text-center rounded-xl border px-8 py-8 transition-all bg-slate-900/40 border-slate-700 hover:bg-slate-800 hover:border-blue-500 hover:scale-[1.05] hover:shadow-xl"
                 >
                   <FaFlag className="text-6xl mx-auto text-blue-500" />
-                  <h3 className="mt-4 text-xl font-bold">{t("navbar.corporate.cards.vision.title")}</h3>
+                  <h3 className="mt-4 text-xl font-bold">
+                    {t("navbar.corporate.cards.vision.title")}
+                  </h3>
                   <p className="mt-2 text-gray-300 text-sm">
                     {t("navbar.corporate.cards.vision.subtitle")}
                   </p>
@@ -133,7 +130,6 @@ export default function Navbar() {
                     {t("navbar.corporate.cards.policies.subtitle")}
                   </p>
                 </Link>
-
               </div>
             </div>
           </div>
@@ -151,6 +147,7 @@ export default function Navbar() {
 
             {/* Mega menu */}
             <div
+              onMouseLeave={() => setOpenMenu(null)}
               className={`
                 absolute left-1/2 -translate-x-1/2
                 mt-2 pt-4
@@ -164,7 +161,6 @@ export default function Navbar() {
               `}
             >
               <div className="grid grid-cols-3 gap-8">
-                
                 {/* ÜRÜNLER */}
                 <Link
                   href="/urunler"
@@ -209,38 +205,56 @@ export default function Navbar() {
                     {t("navbar.corporate.cards.references.subtitle")}
                   </p>
                 </Link>
-             
               </div>
             </div>
           </div>
 
           {/* HABERLER */}
-          <Link href="/haberler" className="hover:text-blue-400 text-lg">
+          <Link
+            href="/haberler"
+            className="hover:text-blue-400 text-lg"
+            onMouseEnter={() => setOpenMenu(null)}
+          >
             {t("navbar.tabs.news")}
           </Link>
 
           {/* KADROMUZ */}
-          <Link href="/kadromuz" className="hover:text-blue-400 text-lg">
+          <Link
+            href="/kadromuz"
+            className="hover:text-blue-400 text-lg"
+            onMouseEnter={() => setOpenMenu(null)}
+          >
             {t("navbar.tabs.team")}
           </Link>
 
           {/* İLETİŞİM */}
-          <Link href="/iletisim" className="hover:text-blue-400 text-lg">
+          <Link
+            href="/iletisim"
+            className="hover:text-blue-400 text-lg"
+            onMouseEnter={() => setOpenMenu(null)}
+          >
             {t("navbar.tabs.contact")}
           </Link>
 
           {/* LANG */}
-          <div className="flex items-center gap-2 text-lg">
+          <div
+            className="flex items-center gap-2 text-lg"
+            onMouseEnter={() => setOpenMenu(null)}
+          >
             <button
               onClick={() => setLang("tr")}
-              className={`${lang === "tr" ? "text-blue-400 font-semibold" : ""}`}
+              className={`${
+                lang === "tr" ? "text-blue-400 font-semibold" : ""
+              }`}
             >
               TR
             </button>
             <span>|</span>
             <button
               onClick={() => setLang("en")}
-              className={`${lang === "en" ? "text-blue-400 font-semibold" : ""}`}
+              className={`${
+                lang === "en" ? "text-blue-400 font-semibold" : ""
+              }`}
             >
               EN
             </button>
@@ -251,32 +265,59 @@ export default function Navbar() {
       {/* ⭐ MOBILE MENU PANEL — SADECE MOBİLDE AÇILIR */}
       {mobileOpen && (
         <div className="md:hidden bg-slate-900/95 text-white px-8 py-6 space-y-6 border-t border-slate-700">
-
-          <Link href="/kabiliyetler" onClick={() => setMobileOpen(false)} className="block text-lg">
+          <Link
+            href="/kabiliyetler"
+            onClick={() => setMobileOpen(false)}
+            className="block text-lg"
+          >
             {t("navbar.corporate.cards.capabilities.title")}
           </Link>
 
-          <Link href="/vizyon" onClick={() => setMobileOpen(false)} className="block text-lg">
+          <Link
+            href="/vizyon"
+            onClick={() => setMobileOpen(false)}
+            className="block text-lg"
+          >
             {t("navbar.corporate.cards.vision.title")}
           </Link>
 
-          <Link href="/politikalar" onClick={() => setMobileOpen(false)} className="block text-lg">
+          <Link
+            href="/politikalar"
+            onClick={() => setMobileOpen(false)}
+            className="block text-lg"
+          >
             {t("navbar.corporate.cards.policies.title")}
           </Link>
 
-          <Link href="/urunler" onClick={() => setMobileOpen(false)} className="block text-lg">
+          <Link
+            href="/urunler"
+            onClick={() => setMobileOpen(false)}
+            className="block text-lg"
+          >
             {t("navbar.productsMenu.cards.products.title")}
           </Link>
 
-          <Link href="/haberler" onClick={() => setMobileOpen(false)} className="block text-lg">
+          <Link
+            href="/haberler"
+            onClick={() => setMobileOpen(false)}
+            className="block text-lg"
+          >
             {t("navbar.tabs.news")}
           </Link>
 
-          <Link href="/kadromuz" onClick={() => setMobileOpen(false)} className="block text-lg">
+          <Link
+            href="/kadromuz"
+            onClick={() => setMobileOpen(false)}
+            className="block text-lg"
+          >
             {t("navbar.tabs.team")}
           </Link>
 
-          <Link href="/iletisim" onClick={() => setMobileOpen(false)} className="block text-lg">
+          <Link
+            href="/iletisim"
+            onClick={() => setMobileOpen(false)}
+            className="block text-lg"
+          >
             {t("navbar.tabs.contact")}
           </Link>
 

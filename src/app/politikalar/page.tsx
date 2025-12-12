@@ -3,6 +3,7 @@
 import { useLanguage } from "../i18n/LanguageContext";
 import policiesTR from "../../locales/tr/policies.json";
 import policiesEN from "../../locales/en/policies.json";
+import PageTransition from "../components/PageTransition";
 
 const policiesData = {
   tr: policiesTR,
@@ -14,6 +15,8 @@ export default function PolitikalarPage() {
   const data = policiesData[lang];
 
   return (
+        <PageTransition>
+    
     <main className="bg-slate-950 text-white min-h-screen">
       {/* HEADER */}
       <section className="relative py-24 bg-gradient-to-b from-blue-900/40 to-slate-950">
@@ -70,5 +73,7 @@ export default function PolitikalarPage() {
         </div>
       </section>
     </main>
+        </PageTransition>
+    
   );
 }

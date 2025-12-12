@@ -28,13 +28,20 @@
     }
   },
   "form": {
+          "defaultSubject": "EMOF WebSite Contact",
+
     "title": "Send Us a Message",
     "fields": {
       "name": "Your Name",
       "email": "Your Email Address",
       "subject": "Subject",
       "message": "Your Message"
-    },
+    }, "labels": {
+    "name": "Name Surname",
+    "email": "E-mail",
+    "message": "Message"
+  },
+
     "submit": "Send"
   },
   "map": {

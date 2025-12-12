@@ -8,6 +8,19 @@ import Image from "next/image";
 // Sayfa yenilenmeden (full refresh olmadan) değerini korur.
 let heroAnimationPlayed = false;
 
+// ---------------- TYPES ----------------
+type Particle = {
+  id: number;
+  x: number;
+  y: number;
+  size: number;
+  duration: number;
+  delay: number;
+};
+
+type MousePos = { x: number; y: number };
+
+// ---------------------------------------
 export default function Hero() {
   // Animasyon daha önce bu sekmede oynatıldı mı?
   const [hasPlayed, setHasPlayed] = useState(heroAnimationPlayed);
@@ -16,8 +29,8 @@ export default function Hero() {
   // Animasyon state'leri
   const [stage, setStage] = useState(0);
   const [showText, setShowText] = useState(false);
-  const [particles, setParticles] = useState([]);
-  const [mousePos, setMousePos] = useState({ x: 0, y: 0 });
+  const [particles, setParticles] = useState<Particle[]>([]);
+  const [mousePos, setMousePos] = useState<MousePos>({ x: 0, y: 0 });
 
   const planeStages = [
     { src: "/1.png", duration: 1000 },
@@ -29,7 +42,7 @@ export default function Hero() {
 
   // Generate particles
   useEffect(() => {
-    const newParticles = Array.from({ length: 30 }, (_, i) => ({
+    const newParticles: Particle[] = Array.from({ length: 30 }, (_, i) => ({
       id: i,
       x: Math.random() * 100,
       y: Math.random() * 100,
@@ -42,7 +55,7 @@ export default function Hero() {
 
   // Mouse tracking
   useEffect(() => {
-    const handleMouseMove = (e) => {
+    const handleMouseMove = (e: MouseEvent) => {
       const x = (e.clientX / window.innerWidth - 0.5) * 20;
       const y = (e.clientY / window.innerHeight - 0.5) * 20;
       setMousePos({ x, y });
@@ -92,8 +105,13 @@ export default function Hero() {
     <section className="relative h-screen w-full bg-gradient-to-br from-slate-950 via-slate-900 to-blue-950 overflow-hidden select-none">
       <style jsx global>{`
         @keyframes float {
-          0%, 100% { transform: translateY(0px); }
-          50% { transform: translateY(-20px); }
+          0%,
+          100% {
+            transform: translateY(0px);
+          }
+          50% {
+            transform: translateY(-20px);
+          }
         }
       `}</style>
 
@@ -116,22 +134,35 @@ export default function Hero() {
       {/* Animated Background Particles */}
       <div className="absolute inset-0 opacity-30">
         <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-blue-400 rounded-full animate-pulse" />
-        <div className="absolute top-1/3 right-1/3 w-1 h-1 bg-blue-300 rounded-full animate-pulse" style={{ animationDelay: '75ms' }} />
-        <div className="absolute bottom-1/4 left-1/3 w-1.5 h-1.5 bg-blue-500 rounded-full animate-pulse" style={{ animationDelay: '150ms' }} />
-        <div className="absolute top-1/2 right-1/4 w-2 h-2 bg-blue-400 rounded-full animate-pulse" style={{ animationDelay: '300ms' }} />
+        <div
+          className="absolute top-1/3 right-1/3 w-1 h-1 bg-blue-300 rounded-full animate-pulse"
+          style={{ animationDelay: "75ms" }}
+        />
+        <div
+          className="absolute bottom-1/4 left-1/3 w-1.5 h-1.5 bg-blue-500 rounded-full animate-pulse"
+          style={{ animationDelay: "150ms" }}
+        />
+        <div
+          className="absolute top-1/2 right-1/4 w-2 h-2 bg-blue-400 rounded-full animate-pulse"
+          style={{ animationDelay: "300ms" }}
+        />
       </div>
 
       {/* Floating Geometric Shapes */}
       <div
         className="absolute top-1/4 left-1/4 w-32 h-32 border border-blue-400/20 transition-transform duration-700"
         style={{
-          transform: `rotate(45deg) translate(${mousePos.x * 0.5}px, ${mousePos.y * 0.5}px)`,
+          transform: `rotate(45deg) translate(${mousePos.x * 0.5}px, ${
+            mousePos.y * 0.5
+          }px)`,
         }}
       />
       <div
         className="absolute bottom-1/3 right-1/4 w-24 h-24 border border-cyan-400/20 transition-transform duration-700"
         style={{
-          transform: `rotate(12deg) translate(${mousePos.x * -0.3}px, ${mousePos.y * -0.3}px)`,
+          transform: `rotate(12deg) translate(${mousePos.x * -0.3}px, ${
+            mousePos.y * -0.3
+          }px)`,
         }}
       />
 

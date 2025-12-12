@@ -3,6 +3,7 @@
 import { useLanguage } from "../i18n/LanguageContext";
 import visionTR from "../../locales/tr/vision.json";
 import visionEN from "../../locales/en/vision.json";
+import PageTransition from "../components/PageTransition";
 
 const visionData = {
   tr: visionTR,
@@ -14,6 +15,8 @@ export default function VizyonPage() {
   const data = visionData[lang];
 
   return (
+        <PageTransition>
+    
     <main className="bg-slate-950 text-white min-h-screen">
       {/* HERO / HEADER */}
       <section className="relative py-24 bg-gradient-to-b from-blue-900/40 to-slate-950 overflow-hidden">
@@ -67,5 +70,7 @@ export default function VizyonPage() {
         </div>
       </section>
     </main>
+        </PageTransition>
+    
   );
 }

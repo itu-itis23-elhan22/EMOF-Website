@@ -4,6 +4,7 @@ import { useLanguage } from "../i18n/LanguageContext";
 import productsTR from "../../locales/tr/products.json";
 import productsEN from "../../locales/en/products.json";
 import { FaCogs } from "react-icons/fa";
+import PageTransition from "../components/PageTransition";
 
 const productsData = {
   tr: productsTR,
@@ -15,6 +16,8 @@ export default function ProductsPage() {
   const data = productsData[lang];
 
   return (
+        <PageTransition>
+    
     <main className="bg-slate-950 min-h-screen py-16">
       <div className="max-w-7xl mx-auto px-6 space-y-10">
         {/* HEADER */}
@@ -56,5 +59,7 @@ export default function ProductsPage() {
         </div>
       </div>
     </main>
+        </PageTransition>
+    
   );
 }

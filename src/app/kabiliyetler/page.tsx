@@ -5,12 +5,15 @@ import { useLanguage } from "../i18n/LanguageContext";
 
 import trData from "../../locales/tr/capabilities.json";
 import enData from "../../locales/en/capabilities.json";
+import PageTransition from "../components/PageTransition";
 
 export default function KabiliyetlerPage() {
   const { lang } = useLanguage();
   const data = lang === "tr" ? trData : enData;
 
   return (
+        <PageTransition>
+    
     <main className="bg-slate-950 text-white min-h-screen py-24 px-6">
       <div className="max-w-7xl mx-auto space-y-16">
         {/* HEADER */}
@@ -129,5 +132,7 @@ export default function KabiliyetlerPage() {
         </section>
       </div>
     </main>
+        </PageTransition>
+    
   );
 }

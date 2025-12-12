@@ -3,6 +3,7 @@
 import { useLanguage } from "../i18n/LanguageContext";
 import teamTR from "../../locales/tr/team.json";
 import teamEN from "../../locales/en/team.json";
+import PageTransition from "../components/PageTransition";
 
 const teamData = {
   tr: teamTR,
@@ -14,6 +15,8 @@ export default function KadromuzPage() {
   const data = teamData[lang];
 
   return (
+        <PageTransition>
+    
     <main className="bg-slate-950 min-h-screen py-24 px-6 text-white">
       <div className="max-w-7xl mx-auto space-y-16">
         {/* HEADER */}
@@ -80,5 +83,7 @@ export default function KadromuzPage() {
         </section>
       </div>
     </main>
+        </PageTransition>
+    
   );
 }

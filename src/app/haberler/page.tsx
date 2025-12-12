@@ -3,6 +3,7 @@
 import { useLanguage } from "../i18n/LanguageContext";
 import newsTR from "../../locales/tr/news.json";
 import newsEN from "../../locales/en/news.json";
+import PageTransition from "../components/PageTransition";
 
 const newsData = {
   tr: newsTR,
@@ -14,6 +15,7 @@ export default function HaberlerPage() {
   const data = newsData[lang];
 
   return (
+    <PageTransition>
     <main className="bg-slate-950 min-h-screen py-20 px-6 text-white">
       <div className="max-w-7xl mx-auto space-y-16">
         {/* HEADER */}
@@ -70,5 +72,6 @@ export default function HaberlerPage() {
         </div>
       </div>
     </main>
+    </PageTransition>
   );
 }

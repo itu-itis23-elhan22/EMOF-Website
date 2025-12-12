@@ -29,13 +29,20 @@
   },
   "form": {
     "title": "Bize Mesaj Gönderin",
+      "defaultSubject": "EMOF Web Sitesi İletişim",
+
     "fields": {
       "name": "Adınız",
       "email": "E-posta adresiniz",
       "subject": "Konu",
       "message": "Mesajınız"
     },
-    "submit": "Gönder"
+     "labels": {
+    "name": "Ad Soyad",
+    "email": "E-posta",
+    "message": "Mesaj"
+  },
+  "submit": "Gönder"
   },
   "map": {
     "src": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3065.876389978393!2d32.8597414!3d39.9333634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14d34f5cef2b3c4b%3A0x5c6a6e58f35b706e!2sAnkara!5e0!3m2!1str!2str!4v1700000000000"

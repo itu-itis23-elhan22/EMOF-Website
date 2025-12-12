@@ -34,6 +34,35 @@
       "name": "Özel Proje Parçaları",
       "code": "CUSTOM",
       "desc": "Müşteri çizimlerine göre özel parça üretimi."
+    },{
+      "name": "İniş Takımı Bileşenleri",
+      "code": "LND-GEAR",
+      "desc": "Uçak iniş takımlarında kullanılan yüksek dayanımlı işlenmiş parçalar."
+    },
+    {
+      "name": "Kompozit Kalıp Elemanları",
+      "code": "CMP-MOLD",
+      "desc": "Kompozit üretim süreçleri için hassas yüzeyli kalıp parçaları."
+    },
+    {
+      "name": "Yakıt Sistemi Parçaları",
+      "code": "FUEL-SYS",
+      "desc": "Yakıt akışı ve güvenliğini sağlayan hassas işlenmiş bağlantı parçaları."
+    },
+    {
+      "name": "Hidrolik Sistem Bileşenleri",
+      "code": "HYDRO-PART",
+      "desc": "Hidrolik kontrol üniteleri için sızdırmazlık ve dayanım odaklı parçalar."
+    },
+    {
+      "name": "Elektronik Kutu & Muhafaza Parçaları",
+      "code": "ELEC-HOUS",
+      "desc": "Havacılık elektroniği için koruyucu alüminyum muhafaza parçaları."
+    },
+    {
+      "name": "Helikopter Gövde Bağlantı Elemanları",
+      "code": "HELI-FAST",
+      "desc": "Helikopter yapılarında kullanılan bağlantı ve taşıyıcı elemanlar."
     }
   ]
 }

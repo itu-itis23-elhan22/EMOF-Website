@@ -3,6 +3,7 @@
 import { useLanguage } from "../i18n/LanguageContext";
 import referencesTR from "../../locales/tr/references.json";
 import referencesEN from "../../locales/en/references.json";
+import PageTransition from "../components/PageTransition";
 
 const referencesData = {
   tr: referencesTR,
@@ -14,6 +15,8 @@ export default function ReferanslarPage() {
   const data = referencesData[lang];
 
   return (
+        <PageTransition>
+    
     <main className="bg-slate-950 min-h-screen py-24 px-6 text-white">
       <div className="max-w-7xl mx-auto space-y-16">
         {/* HEADER */}
@@ -89,5 +92,7 @@ export default function ReferanslarPage() {
         </section>
       </div>
     </main>
+        </PageTransition>
+    
   );
 }
