@@ -25,6 +25,12 @@ export default function Navbar() {
     setOpenMenu(null);
   }, [pathname]);
 
+  // Helper to check if a link is active
+  const isActive = (path: string) => pathname === path;
+
+  // Helper to check if a category is active (if current path starts with or includes one of the child paths)
+  const isCategoryActive = (paths: string[]) => paths.some(path => pathname === path || pathname.startsWith(path));
+
   return (
     <nav
       className="fixed top-0 left-0 w-full z-50 bg-[#0f172a]/80 backdrop-blur-md shadow-lg select-none"
@@ -35,7 +41,7 @@ export default function Navbar() {
         <Link
           href="/"
           className="text-3xl font-extrabold tracking-wide flex items-center gap-2"
-          onMouseEnter={()=>setOpenMenu(null)}
+          onMouseEnter={() => setOpenMenu(null)}
         >
           <span className="flex text-white">
             <span className="animate-letter-1">E</span>
@@ -45,8 +51,8 @@ export default function Navbar() {
           </span>
 
           <span className="bg-gradient-to-r from-blue-400 via-blue-500 to-cyan-400 bg-clip-text text-transparent">
-  {t("navbar.tabs.main-name")}
-</span>
+            {t("navbar.tabs.main-name")}
+          </span>
         </Link>
 
         {/* ⭐ MOBILE MENU BUTONU — SADECE MOBİLDE GÖRÜNÜR */}
@@ -64,11 +70,15 @@ export default function Navbar() {
             className="relative group"
             onMouseEnter={() => setOpenMenu("kurumsal")}
           >
-            <button className="hover:text-blue-400 transition text-lg tracking-wide">
+            <button
+              className={`hover:text-blue-400 transition text-lg tracking-wide ${isCategoryActive(["/kabiliyetler", "/vizyon", "/politikalar"]) ? "text-blue-400 font-bold" : ""
+                }`}
+            >
               {t("navbar.tabs.corporate")}
             </button>
 
-            <div className="h-[2px] bg-blue-500 w-0 group-hover:w-full transition-all duration-300" />
+            <div className={`h-[2px] bg-blue-500 transition-all duration-300 ${isCategoryActive(["/kabiliyetler", "/vizyon", "/politikalar"]) ? "w-full" : "w-0 group-hover:w-full"
+              }`} />
 
             {/* Mega menu */}
             <div
@@ -78,10 +88,9 @@ export default function Navbar() {
                 mt-2 pt-4
                 w-[1000px] bg-slate-900 text-white shadow-xl rounded-md py-10 px-10
                 transition-all duration-300 ease-out
-                ${
-                  openMenu === "kurumsal"
-                    ? "visible opacity-100 translate-y-0"
-                    : "invisible opacity-0 translate-y-3 pointer-events-none"
+                ${openMenu === "kurumsal"
+                  ? "visible opacity-100 translate-y-0"
+                  : "invisible opacity-0 translate-y-3 pointer-events-none"
                 }
               `}
             >
@@ -90,10 +99,11 @@ export default function Navbar() {
                 <Link
                   href="/kabiliyetler"
                   onClick={() => setOpenMenu(null)}
-                  className="group block text-center rounded-xl border px-8 py-8 transition-all bg-slate-900/40 border-slate-700 hover:bg-slate-800 hover:border-blue-500 hover:scale-[1.05] hover:shadow-xl"
+                  className={`group block text-center rounded-xl border px-8 py-8 transition-all bg-slate-900/40 border-slate-700 hover:bg-slate-800 hover:border-blue-500 hover:scale-[1.05] hover:shadow-xl ${isActive("/kabiliyetler") ? "border-blue-500 bg-slate-800" : ""
+                    }`}
                 >
-                  <FaCogs className="text-6xl mx-auto text-blue-500" />
-                  <h3 className="mt-4 text-xl font-bold">
+                  <FaCogs className={`text-6xl mx-auto ${isActive("/kabiliyetler") ? "text-blue-400" : "text-blue-500"}`} />
+                  <h3 className={`mt-4 text-xl font-bold ${isActive("/kabiliyetler") ? "text-blue-400" : ""}`}>
                     {t("navbar.corporate.cards.capabilities.title")}
                   </h3>
                   <p className="mt-2 text-gray-300 text-sm">
@@ -105,10 +115,11 @@ export default function Navbar() {
                 <Link
                   href="/vizyon"
                   onClick={() => setOpenMenu(null)}
-                  className="group block text-center rounded-xl border px-8 py-8 transition-all bg-slate-900/40 border-slate-700 hover:bg-slate-800 hover:border-blue-500 hover:scale-[1.05] hover:shadow-xl"
+                  className={`group block text-center rounded-xl border px-8 py-8 transition-all bg-slate-900/40 border-slate-700 hover:bg-slate-800 hover:border-blue-500 hover:scale-[1.05] hover:shadow-xl ${isActive("/vizyon") ? "border-blue-500 bg-slate-800" : ""
+                    }`}
                 >
-                  <FaFlag className="text-6xl mx-auto text-blue-500" />
-                  <h3 className="mt-4 text-xl font-bold">
+                  <FaFlag className={`text-6xl mx-auto ${isActive("/vizyon") ? "text-blue-400" : "text-blue-500"}`} />
+                  <h3 className={`mt-4 text-xl font-bold ${isActive("/vizyon") ? "text-blue-400" : ""}`}>
                     {t("navbar.corporate.cards.vision.title")}
                   </h3>
                   <p className="mt-2 text-gray-300 text-sm">
@@ -120,10 +131,11 @@ export default function Navbar() {
                 <Link
                   href="/politikalar"
                   onClick={() => setOpenMenu(null)}
-                  className="group block text-center rounded-xl border px-8 py-8 transition-all bg-slate-900/40 border-slate-700 hover:bg-slate-800 hover:border-blue-500 hover:scale-[1.05] hover:shadow-xl"
+                  className={`group block text-center rounded-xl border px-8 py-8 transition-all bg-slate-900/40 border-slate-700 hover:bg-slate-800 hover:border-blue-500 hover:scale-[1.05] hover:shadow-xl ${isActive("/politikalar") ? "border-blue-500 bg-slate-800" : ""
+                    }`}
                 >
-                  <FaFileAlt className="text-6xl mx-auto text-blue-500" />
-                  <h3 className="mt-4 text-xl font-bold">
+                  <FaFileAlt className={`text-6xl mx-auto ${isActive("/politikalar") ? "text-blue-400" : "text-blue-500"}`} />
+                  <h3 className={`mt-4 text-xl font-bold ${isActive("/politikalar") ? "text-blue-400" : ""}`}>
                     {t("navbar.corporate.cards.policies.title")}
                   </h3>
                   <p className="mt-2 text-gray-300 text-sm">
@@ -139,11 +151,15 @@ export default function Navbar() {
             className="relative group"
             onMouseEnter={() => setOpenMenu("urunler")}
           >
-            <button className="hover:text-blue-400 transition text-lg tracking-wide">
+            <button
+              className={`hover:text-blue-400 transition text-lg tracking-wide ${isCategoryActive(["/urunler", "/sertifikalar", "/referanslar"]) ? "text-blue-400 font-bold" : ""
+                }`}
+            >
               {t("navbar.tabs.products")}
             </button>
 
-            <div className="h-[2px] bg-blue-500 w-0 group-hover:w-full transition-all duration-300" />
+            <div className={`h-[2px] bg-blue-500 transition-all duration-300 ${isCategoryActive(["/urunler", "/sertifikalar", "/referanslar"]) ? "w-full" : "w-0 group-hover:w-full"
+              }`} />
 
             {/* Mega menu */}
             <div
@@ -153,10 +169,9 @@ export default function Navbar() {
                 mt-2 pt-4
                 w-[1000px] bg-slate-900 text-white shadow-xl rounded-md py-10 px-10
                 transition-all duration-300 ease-out
-                ${
-                  openMenu === "urunler"
-                    ? "visible opacity-100 translate-y-0"
-                    : "invisible opacity-0 translate-y-3 pointer-events-none"
+                ${openMenu === "urunler"
+                  ? "visible opacity-100 translate-y-0"
+                  : "invisible opacity-0 translate-y-3 pointer-events-none"
                 }
               `}
             >
@@ -165,10 +180,11 @@ export default function Navbar() {
                 <Link
                   href="/urunler"
                   onClick={() => setOpenMenu(null)}
-                  className="group block text-center rounded-xl border px-8 py-8 bg-slate-900/40 border-slate-700 hover:bg-slate-800 hover:border-blue-500 hover:scale-[1.05] hover:shadow-xl transition-all"
+                  className={`group block text-center rounded-xl border px-8 py-8 bg-slate-900/40 border-slate-700 hover:bg-slate-800 hover:border-blue-500 hover:scale-[1.05] hover:shadow-xl transition-all ${isActive("/urunler") ? "border-blue-500 bg-slate-800" : ""
+                    }`}
                 >
-                  <FaCogs className="text-6xl mx-auto text-blue-500" />
-                  <h3 className="mt-4 text-xl font-bold">
+                  <FaCogs className={`text-6xl mx-auto ${isActive("/urunler") ? "text-blue-400" : "text-blue-500"}`} />
+                  <h3 className={`mt-4 text-xl font-bold ${isActive("/urunler") ? "text-blue-400" : ""}`}>
                     {t("navbar.productsMenu.cards.products.title")}
                   </h3>
                   <p className="mt-2 text-gray-300 text-sm">
@@ -180,10 +196,11 @@ export default function Navbar() {
                 <Link
                   href="/sertifikalar"
                   onClick={() => setOpenMenu(null)}
-                  className="group block text-center rounded-xl border px-8 py-8 bg-slate-900/40 border-slate-700 hover:bg-slate-800 hover:border-blue-500 hover:scale-[1.05] hover:shadow-xl transition-all"
+                  className={`group block text-center rounded-xl border px-8 py-8 bg-slate-900/40 border-slate-700 hover:bg-slate-800 hover:border-blue-500 hover:scale-[1.05] hover:shadow-xl transition-all ${isActive("/sertifikalar") ? "border-blue-500 bg-slate-800" : ""
+                    }`}
                 >
-                  <FaCertificate className="text-6xl mx-auto text-blue-500" />
-                  <h3 className="mt-4 text-xl font-bold">
+                  <FaCertificate className={`text-6xl mx-auto ${isActive("/sertifikalar") ? "text-blue-400" : "text-blue-500"}`} />
+                  <h3 className={`mt-4 text-xl font-bold ${isActive("/sertifikalar") ? "text-blue-400" : ""}`}>
                     {t("navbar.productsMenu.cards.certificates.title")}
                   </h3>
                   <p className="mt-2 text-gray-300 text-sm">
@@ -195,10 +212,11 @@ export default function Navbar() {
                 <Link
                   href="/referanslar"
                   onClick={() => setOpenMenu(null)}
-                  className="group block text-center rounded-xl border px-8 py-8 bg-slate-900/40 border-slate-700 hover:bg-slate-800 hover:border-blue-500 hover:scale-[1.05] hover:shadow-xl transition-all"
+                  className={`group block text-center rounded-xl border px-8 py-8 bg-slate-900/40 border-slate-700 hover:bg-slate-800 hover:border-blue-500 hover:scale-[1.05] hover:shadow-xl transition-all ${isActive("/referanslar") ? "border-blue-500 bg-slate-800" : ""
+                    }`}
                 >
-                  <FaHandshake className="text-6xl mx-auto text-blue-500" />
-                  <h3 className="mt-4 text-xl font-bold">
+                  <FaHandshake className={`text-6xl mx-auto ${isActive("/referanslar") ? "text-blue-400" : "text-blue-500"}`} />
+                  <h3 className={`mt-4 text-xl font-bold ${isActive("/referanslar") ? "text-blue-400" : ""}`}>
                     {t("navbar.corporate.cards.references.title")}
                   </h3>
                   <p className="mt-2 text-gray-300 text-sm">
@@ -212,7 +230,8 @@ export default function Navbar() {
           {/* HABERLER */}
           <Link
             href="/haberler"
-            className="hover:text-blue-400 text-lg"
+            className={`hover:text-blue-400 text-lg transition ${isActive("/haberler") ? "text-blue-400 font-bold" : ""
+              }`}
             onMouseEnter={() => setOpenMenu(null)}
           >
             {t("navbar.tabs.news")}
@@ -221,7 +240,8 @@ export default function Navbar() {
           {/* KADROMUZ */}
           <Link
             href="/kadromuz"
-            className="hover:text-blue-400 text-lg"
+            className={`hover:text-blue-400 text-lg transition ${isActive("/kadromuz") ? "text-blue-400 font-bold" : ""
+              }`}
             onMouseEnter={() => setOpenMenu(null)}
           >
             {t("navbar.tabs.team")}
@@ -230,7 +250,8 @@ export default function Navbar() {
           {/* İLETİŞİM */}
           <Link
             href="/iletisim"
-            className="hover:text-blue-400 text-lg"
+            className={`hover:text-blue-400 text-lg transition ${isActive("/iletisim") ? "text-blue-400 font-bold" : ""
+              }`}
             onMouseEnter={() => setOpenMenu(null)}
           >
             {t("navbar.tabs.contact")}
@@ -243,18 +264,16 @@ export default function Navbar() {
           >
             <button
               onClick={() => setLang("tr")}
-              className={`${
-                lang === "tr" ? "text-blue-400 font-semibold" : ""
-              }`}
+              className={`${lang === "tr" ? "text-blue-400 font-semibold" : ""
+                }`}
             >
               TR
             </button>
             <span>|</span>
             <button
               onClick={() => setLang("en")}
-              className={`${
-                lang === "en" ? "text-blue-400 font-semibold" : ""
-              }`}
+              className={`${lang === "en" ? "text-blue-400 font-semibold" : ""
+                }`}
             >
               EN
             </button>
@@ -268,7 +287,7 @@ export default function Navbar() {
           <Link
             href="/kabiliyetler"
             onClick={() => setMobileOpen(false)}
-            className="block text-lg"
+            className={`block text-lg ${isActive("/kabiliyetler") ? "text-blue-400 font-bold" : ""}`}
           >
             {t("navbar.corporate.cards.capabilities.title")}
           </Link>
@@ -276,7 +295,7 @@ export default function Navbar() {
           <Link
             href="/vizyon"
             onClick={() => setMobileOpen(false)}
-            className="block text-lg"
+            className={`block text-lg ${isActive("/vizyon") ? "text-blue-400 font-bold" : ""}`}
           >
             {t("navbar.corporate.cards.vision.title")}
           </Link>
@@ -284,7 +303,7 @@ export default function Navbar() {
           <Link
             href="/politikalar"
             onClick={() => setMobileOpen(false)}
-            className="block text-lg"
+            className={`block text-lg ${isActive("/politikalar") ? "text-blue-400 font-bold" : ""}`}
           >
             {t("navbar.corporate.cards.policies.title")}
           </Link>
@@ -292,7 +311,7 @@ export default function Navbar() {
           <Link
             href="/urunler"
             onClick={() => setMobileOpen(false)}
-            className="block text-lg"
+            className={`block text-lg ${isActive("/urunler") ? "text-blue-400 font-bold" : ""}`}
           >
             {t("navbar.productsMenu.cards.products.title")}
           </Link>
@@ -300,7 +319,7 @@ export default function Navbar() {
           <Link
             href="/haberler"
             onClick={() => setMobileOpen(false)}
-            className="block text-lg"
+            className={`block text-lg ${isActive("/haberler") ? "text-blue-400 font-bold" : ""}`}
           >
             {t("navbar.tabs.news")}
           </Link>
@@ -308,7 +327,7 @@ export default function Navbar() {
           <Link
             href="/kadromuz"
             onClick={() => setMobileOpen(false)}
-            className="block text-lg"
+            className={`block text-lg ${isActive("/kadromuz") ? "text-blue-400 font-bold" : ""}`}
           >
             {t("navbar.tabs.team")}
           </Link>
@@ -316,7 +335,7 @@ export default function Navbar() {
           <Link
             href="/iletisim"
             onClick={() => setMobileOpen(false)}
-            className="block text-lg"
+            className={`block text-lg ${isActive("/iletisim") ? "text-blue-400 font-bold" : ""}`}
           >
             {t("navbar.tabs.contact")}
           </Link>
@@ -324,17 +343,15 @@ export default function Navbar() {
           <div className="flex gap-4 text-lg pt-4 border-t border-slate-700">
             <button
               onClick={() => setLang("tr")}
-              className={`hover:text-blue-400 transition ${
-                lang === "tr" ? "text-blue-400 font-semibold" : ""
-              }`}
+              className={`hover:text-blue-400 transition ${lang === "tr" ? "text-blue-400 font-semibold" : ""
+                }`}
             >
               TR
             </button>
             <button
               onClick={() => setLang("en")}
-              className={`hover:text-blue-400 transition ${
-                lang === "en" ? "text-blue-400 font-semibold" : ""
-              }`}
+              className={`hover:text-blue-400 transition ${lang === "en" ? "text-blue-400 font-semibold" : ""
+                }`}
             >
               EN
             </button>
