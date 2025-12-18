@@ -7,10 +7,18 @@
   "quickMenu": {
     "title": "Hızlı Menü",
     "items": [
-      { "label": "Hakkımızda", "href": "/#hakkimizda" },
-      { "label": "Ürünler", "href": "/urunler" },
-      { "label": "Haberler", "href": "/haberler" },
-      { "label": "İletişim", "href": "/iletisim" }
+      {
+        "label": "Hakkımızda",
+        "href": "/#hakkimizda"
+      },
+      {
+        "label": "Ürünler",
+        "href": "/urunler"
+      },
+      {
+        "label": "İletişim",
+        "href": "/iletisim"
+      }
     ]
   },
   "contact": {
@@ -34,10 +42,26 @@
   },
   "social": {
     "icons": [
-      { "label": "Web Sitesi", "href": "#", "symbol": "🌐" },
-      { "label": "Facebook", "href": "#", "symbol": "📘" },
-      { "label": "Instagram", "href": "#", "symbol": "📸" },
-      { "label": "YouTube", "href": "#", "symbol": "▶️" }
+      {
+        "label": "Web Sitesi",
+        "href": "#",
+        "symbol": "🌐"
+      },
+      {
+        "label": "Facebook",
+        "href": "#",
+        "symbol": "📘"
+      },
+      {
+        "label": "Instagram",
+        "href": "#",
+        "symbol": "📸"
+      },
+      {
+        "label": "YouTube",
+        "href": "#",
+        "symbol": "▶️"
+      }
     ]
   },
   "copyright": {

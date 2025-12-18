@@ -227,15 +227,6 @@ export default function Navbar() {
             </div>
           </div>
 
-          {/* HABERLER */}
-          <Link
-            href="/haberler"
-            className={`hover:text-blue-400 text-lg transition ${isActive("/haberler") ? "text-blue-400 font-bold" : ""
-              }`}
-            onMouseEnter={() => setOpenMenu(null)}
-          >
-            {t("navbar.tabs.news")}
-          </Link>
 
           {/* KADROMUZ */}
           <Link
@@ -316,13 +307,6 @@ export default function Navbar() {
             {t("navbar.productsMenu.cards.products.title")}
           </Link>
 
-          <Link
-            href="/haberler"
-            onClick={() => setMobileOpen(false)}
-            className={`block text-lg ${isActive("/haberler") ? "text-blue-400 font-bold" : ""}`}
-          >
-            {t("navbar.tabs.news")}
-          </Link>
 
           <Link
             href="/kadromuz"

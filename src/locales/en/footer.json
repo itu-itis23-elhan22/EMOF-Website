@@ -7,10 +7,18 @@
   "quickMenu": {
     "title": "Quick Menu",
     "items": [
-      { "label": "About Us", "href": "/#hakkimizda" },
-      { "label": "Products", "href": "/urunler" },
-      { "label": "News", "href": "/haberler" },
-      { "label": "Contact", "href": "/iletisim" }
+      {
+        "label": "About Us",
+        "href": "/#hakkimizda"
+      },
+      {
+        "label": "Products",
+        "href": "/urunler"
+      },
+      {
+        "label": "Contact",
+        "href": "/iletisim"
+      }
     ]
   },
   "contact": {
@@ -34,10 +42,26 @@
   },
   "social": {
     "icons": [
-      { "label": "Website", "href": "#", "symbol": "🌐" },
-      { "label": "Facebook", "href": "#", "symbol": "📘" },
-      { "label": "Instagram", "href": "#", "symbol": "📸" },
-      { "label": "YouTube", "href": "#", "symbol": "▶️" }
+      {
+        "label": "Website",
+        "href": "#",
+        "symbol": "🌐"
+      },
+      {
+        "label": "Facebook",
+        "href": "#",
+        "symbol": "📘"
+      },
+      {
+        "label": "Instagram",
+        "href": "#",
+        "symbol": "📸"
+      },
+      {
+        "label": "YouTube",
+        "href": "#",
+        "symbol": "▶️"
+      }
     ]
   },
   "copyright": {
