@@ -307,6 +307,24 @@ export default function Navbar() {
             {t("navbar.productsMenu.cards.products.title")}
           </Link>
 
+          <Link
+            href="/sertifikalar"
+            onClick={() => setMobileOpen(false)}
+            className={`block text-lg ${isActive("/sertifikalar") ? "text-blue-400 font-bold" : ""
+              }`}
+          >
+            {t("navbar.productsMenu.cards.certificates.title")}
+          </Link>
+
+          <Link
+            href="/referanslar"
+            onClick={() => setMobileOpen(false)}
+            className={`block text-lg ${isActive("/referanslar") ? "text-blue-400 font-bold" : ""
+              }`}
+          >
+            {t("navbar.corporate.cards.references.title")}
+          </Link>
+
 
           <Link
             href="/kadromuz"

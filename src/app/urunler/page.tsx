@@ -18,20 +18,20 @@ export default function ProductsPage() {
   return (
         <PageTransition>
     
-    <main className="bg-slate-950 min-h-screen py-16">
-      <div className="max-w-7xl mx-auto px-6 space-y-10">
+    <main className="bg-slate-950 text-white min-h-screen py-24 px-6">
+      <div className="max-w-7xl mx-auto space-y-16">
         {/* HEADER */}
-        <header className="space-y-3">
-          <p className="text-xs tracking-[0.3em] uppercase text-blue-400">
+        <section className="space-y-4 text-center md:text-left">
+          <p className="text-xs tracking-[0.35em] text-blue-400 uppercase">
             {data.header.label}
           </p>
-          <h1 className="text-3xl md:text-4xl font-bold text-white">
+          <h1 className="text-4xl md:text-5xl font-extrabold">
             {data.header.title}
           </h1>
-          <p className="text-slate-300 max-w-2xl text-sm md:text-base">
+          <p className="text-slate-300 text-sm md:text-base max-w-3xl">
             {data.header.intro}
           </p>
-        </header>
+        </section>
 
         {/* PRODUCTS GRID */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
