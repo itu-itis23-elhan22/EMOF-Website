@@ -5,10 +5,22 @@
     "intro": "EMOF Teknoloji, havacılık ve savunma sanayii başta olmak üzere birçok sektörde yüksek hassasiyetli üretim çözümleri sunmaktadır. Aşağıda, hizmet verdiğimiz başlıca alanlar ve örnek proje tipleri yer almaktadır."
   },
   "stats": [
-    { "label": "Tamamlanan Proje", "value": "80+" },
-    { "label": "Teslim Edilen Parça", "value": "5.000+" },
-    { "label": "Zamanında Teslimat", "value": "%98" },
-    { "label": "Uluslararası Standart", "value": "AS9100 & ISO" }
+    {
+      "label": "Tamamlanan Proje",
+      "value": "80+"
+    },
+    {
+      "label": "Teslim Edilen Parça",
+      "value": "5.000+"
+    },
+    {
+      "label": "Zamanında Teslimat",
+      "value": "%98"
+    },
+    {
+      "label": "Uluslararası Standart",
+      "value": "AS9100 & ISO"
+    }
   ],
   "sectorsTitle": "Hizmet Verdiğimiz Alanlar",
   "sectors": [
@@ -38,6 +50,49 @@
     {
       "name": "Prototip Gövde Panelleri",
       "detail": "Yeni platformlar için düşük adetli, yüksek hassasiyetli gövde prototip parçaları."
+    }
+  ],
+  "referencesTitle": "Referanslarımız",
+  "referencesList": [
+    {
+      "name": "NETAS",
+      "image": "/references/netas.png",
+      "description": "Türkiye'nin lider telekomünikasyon ve bilgi teknolojileri şirketi."
+    },
+    {
+      "name": "Encore",
+      "image": "/references/encore.png",
+      "description": "Yüksek teknoloji çözümleri sunan stratejik iş ortağımız."
+    },
+    {
+      "name": "Audio Elektronik",
+      "image": "/references/audio.png",
+      "description": "Bina iletişim ve güvenlik sistemlerinde öncü üretici."
+    },
+    {
+      "name": "TCI Cabin Interior",
+      "image": "/references/tci.png",
+      "description": "Uçak kabin içi sistemleri tasarım ve üretiminde global marka."
+    },
+    {
+      "name": "Profilo Ödeme Sistemleri",
+      "image": "/references/profilo.png",
+      "description": "Ödeme kaydedici cihazlar ve elektronik çözümler."
+    },
+    {
+      "name": "Penta Elektronik",
+      "image": "/references/penta.png",
+      "description": "Elektronik üretim ve tedarik zinciri hizmetleri."
+    },
+    {
+      "name": "Pointek",
+      "image": "/references/pointek.png",
+      "description": "Endüstriyel otomasyon ve yazılım çözümleri."
+    },
+    {
+      "name": "CRC Power Solution",
+      "image": "/references/crc.png",
+      "description": "Enerji ve güç sistemleri alanında yenilikçi çözümler."
     }
   ]
 }

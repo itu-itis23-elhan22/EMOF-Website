@@ -228,6 +228,15 @@ export default function Navbar() {
           </div>
 
 
+          {/* HİZMETLER */}
+          <Link
+            href="/hizmetler"
+            className={`hover:text-blue-400 text-lg transition ${isActive("/hizmetler") ? "text-blue-400 font-bold" : ""
+              }`}
+            onMouseEnter={() => setOpenMenu(null)}
+          >
+            {t("navbar.tabs.services")}
+          </Link>
           {/* KADROMUZ */}
           <Link
             href="/kadromuz"
@@ -325,6 +334,14 @@ export default function Navbar() {
             {t("navbar.corporate.cards.references.title")}
           </Link>
 
+
+          <Link
+            href="/hizmetler"
+            onClick={() => setMobileOpen(false)}
+            className={`block text-lg ${isActive("/hizmetler") ? "text-blue-400 font-bold" : ""}`}
+          >
+            {t("navbar.tabs.services")}
+          </Link>
 
           <Link
             href="/kadromuz"

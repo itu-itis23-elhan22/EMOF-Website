@@ -1,0 +1,52 @@
+{
+    "header": {
+        "label": "HİZMETLER VE ÇÖZÜMLER",
+        "title": "Sektörel Çözümlerimiz",
+        "subtitle": "Telekomünikasyondan havacılığa, farklı sektörler için tasarım ve üretim çözümleri."
+    },
+    "services": [
+        {
+            "sector": "Telekomünikasyon Sektörü",
+            "items": [
+                "Outdoor kabinler",
+                "Lampost kabinler",
+                "Kiosklar (ayaklı –askılı)"
+            ]
+        },
+        {
+            "sector": "Havacılık",
+            "items": [
+                "Galley içi parça üretimi",
+                "Talaşlı imalat"
+            ]
+        },
+        {
+            "sector": "Askeriye",
+            "items": [
+                "Taşıma çantaları",
+                "Sahra Çantaları"
+            ]
+        },
+        {
+            "sector": "Perakende",
+            "items": [
+                "Yazar kasa tutucular",
+                "POS tutucular",
+                "Boru konstrüksiyon montaj parçaları"
+            ]
+        },
+        {
+            "sector": "Elektronik",
+            "items": [
+                "Elektronik fikstür kart tasarımları ve imalatı"
+            ]
+        }
+    ],
+    "rd": {
+        "title": "AR-GE ÇALIŞMALARI",
+        "items": [
+            "Perakende sektörüne yazar kasa-POS tutucu ar-ge çalışması",
+            "Elektronik sektörüne yönelik fikstür kart tasarımları ar-ge çalışması"
+        ]
+    }
+}

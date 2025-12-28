@@ -24,19 +24,19 @@
     ]
   },
   "about": {
-    "title": "HAKKIMIZDA",
-    "intro": "EMOF Teknoloji, havacılık ve savunma sanayii için yüksek hassasiyetli CNC üretim süreçlerinde uzmanlaşmış bir mühendislik şirketidir. Yenilikçi üretim teknikleri ve güçlü mühendislik altyapısı ile müşterilerimize güvenilir, kaliteli ve sürdürülebilir çözümler sunuyoruz.",
+    "title": "ŞİRKET PROFİLİ",
+    "intro": "Emof Teknoloji, 2008 yılında Emof Metal olarak Gökhan Emrah OFLAZ tarafından kurulmuştur. Telekomünikasyon projeleri ile çalışma hayatına başlamıştır, telekomünikasyon projelerinin yanı sıra 2015 yılından bu yana Havacılık sektörüne levha ve talaşlı imalat parçaları, Askeri projeler için kullanılan özel sönümleme takozları içeren taşıma çantaları imal etmektedir.",
     "stats": {
       "employees": {
-        "value": "50+",
+        "value": "12",
         "label": "Çalışan Sayısı"
       },
       "capacity": {
-        "value": "250,000+",
+        "value": "50,000+",
         "label": "Yıllık Üretim Kapasitesi"
       },
       "facility": {
-        "value": "5,000 m²",
+        "value": "1,000 m²",
         "label": "Tesis Alanı"
       },
       "programs": {
@@ -44,6 +44,6 @@
         "label": "Aktif Program"
       }
     },
-    "body": "Modern üretim makineleri, yetkin mühendis ekibi ve kalite odaklı süreç yönetimi sayesinde EMOF Teknoloji, havacılık sektörünün ihtiyaç duyduğu yüksek hassasiyetli parçaları güvenilir şekilde üretmektedir. Tasarımdan prototipe, seri üretimden kalite kontrol süreçlerine kadar tüm adımlarda mükemmellik yaklaşımını benimseyerek sektörde güçlü bir çözüm ortağı konumu elde ettik."
+    "body": "Firmamız Emof Metal olarak başladığı bu yolculukta 2017 yılında Emof Teknoloji olarak kendini yenilemiştir. Farklı sektörlere, ihtiyaca uygun projelerle hem tasarım hem de üretim ve montaj yapmaktadır. 2019 yılında projelerinin arasına perakende sektörüne boru konstrüksiyon montaj parçaları imalini de eklemiştir."
   }
 }

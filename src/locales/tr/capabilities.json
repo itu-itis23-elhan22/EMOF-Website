@@ -57,28 +57,39 @@
   "machinesTitle": "Makine Parkı Örneği",
   "machines": [
     {
-      "name": "5 Eksen Dik İşleme Merkezi",
-      "type": "Yüksek hassasiyetli, tam kapalı kabin",
-      "travel": "X: 800 mm • Y: 600 mm • Z: 500 mm",
-      "notes": "Havacılık yapısal parçaları ve kompleks geometriler için uygundur."
+      "name": "3 Eksen CNC Freze",
+      "type": "Yuntes JHV-800",
+      "travel": "Hassas İşleme Kapasitesi",
+      "notes": "Seri üretim ve kalıp işleme operasyonları.",
+      "image": "/machines/cnc-freze.png"
     },
     {
-      "name": "3 Eksen Dik İşleme Merkezi",
-      "type": "Seri üretim odaklı dik işleme merkezi",
-      "travel": "X: 1.200 mm • Y: 600 mm • Z: 500 mm",
-      "notes": "Orta–büyük boyutlu gövde ve braket parçaları için."
+      "name": "NC Abkant",
+      "type": "Cemax - 1250 mm",
+      "travel": "1250 mm Büküm Uzunluğu",
+      "notes": "Hassas sac metal büküm işlemleri.",
+      "image": "/machines/nc-abkant.png"
     },
     {
-      "name": "CNC Torna Merkezi",
-      "type": "Mil, ring ve dönel parçalar için CNC torna",
-      "travel": "Çap: 300 mm • Boy: 600 mm",
-      "notes": "Bağlantı elemanları ve flanş tipi parçalar için idealdir."
+      "name": "CNC Abkant",
+      "type": "MVD - 3000 mm / 135 Ton",
+      "travel": "3000 mm Büküm / 135 Ton Basınç",
+      "notes": "Büyük boyutlu ve ağır tonajlı büküm işleri.",
+      "image": "/machines/cnc-abkant.png"
     },
     {
-      "name": "3D CMM Ölçüm Cihazı",
-      "type": "Tam otomatik koordinat ölçüm cihazı",
-      "travel": "X: 700 mm • Y: 600 mm • Z: 500 mm",
-      "notes": "Kritik ölçüler için raporlu, izlenebilir ölçüm imkanı."
+      "name": "Eksantrik Pres",
+      "type": "80 Ton Kapasite",
+      "travel": "Kesme ve Form Verme",
+      "notes": "Seri imalat sac parça üretimi.",
+      "image": "/machines/pres.png"
+    },
+    {
+      "name": "Kaynak Atölyesi",
+      "type": "TIG ve MIG Kaynak",
+      "travel": "Profesyonel Kaynak Kabini",
+      "notes": "Alüminyum ve çelik kaynaklı imalat çözümleri.",
+      "image": "/machines/kaynak.png"
     }
   ],
   "cta": {

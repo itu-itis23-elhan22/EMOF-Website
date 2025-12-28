@@ -8,12 +8,12 @@
     "address": {
       "title": "📍 Address",
       "company": "EMOF Teknoloji",
-      "line1": "Ankara Aerospace & Aviation Industrial Zone",
-      "line2": "Türkiye"
+      "line1": "Yukarı Dudullu, 103. Sok No:39 A Blok",
+      "line2": "34775 Ümraniye/İstanbul"
     },
     "phone": {
       "title": "☎️ Phone",
-      "number": "+90 (312) 000 00 00",
+      "number": "0216 412 11 56",
       "whatsappLabel": "Contact via WhatsApp",
       "whatsappUrl": "https://wa.me/905452650705"
     },
@@ -28,23 +28,22 @@
     }
   },
   "form": {
-          "defaultSubject": "EMOF WebSite Contact",
-
+    "defaultSubject": "EMOF WebSite Contact",
     "title": "Send Us a Message",
     "fields": {
       "name": "Your Name",
       "email": "Your Email Address",
       "subject": "Subject",
       "message": "Your Message"
-    }, "labels": {
-    "name": "Name Surname",
-    "email": "E-mail",
-    "message": "Message"
-  },
-
+    },
+    "labels": {
+      "name": "Name Surname",
+      "email": "E-mail",
+      "message": "Message"
+    },
     "submit": "Send"
   },
   "map": {
-    "src": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3065.876389978393!2d32.8597414!3d39.9333634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14d34f5cef2b3c4b%3A0x5c6a6e58f35b706e!2sAnkara!5e0!3m2!1str!2str!4v1700000000000"
+    "src": "https://maps.google.com/maps?q=Yukar%C4%B1+Dudullu%2C+103.+Sok+No%3A39+A+Blok%2C+34775+%C3%9Cmraniye%2F%C4%B0stanbul&t=&z=15&ie=UTF8&iwloc=&output=embed"
   }
 }

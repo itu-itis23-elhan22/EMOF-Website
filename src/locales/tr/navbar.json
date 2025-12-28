@@ -1,16 +1,16 @@
 {
   "tabs": {
     "corporate": "KURUMSAL",
-      "main-name":"TEKNOLOJİ",
-
+    "main-name": "TEKNOLOJİ",
     "products": "ÜRÜNLERİMİZ",
+    "services": "HİZMETLER",
     "news": "HABERLER",
     "team": "KADROMUZ",
     "contact": "İLETİŞİM"
   },
   "corporate": {
     "cards": {
-     "capabilities": {
+      "capabilities": {
         "title": "KABİLİYETLERİMİZ",
         "subtitle": "Makine parkı ve teknik kapasitemiz"
       },

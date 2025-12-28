@@ -1,0 +1,52 @@
+{
+    "header": {
+        "label": "SERVICES AND SOLUTIONS",
+        "title": "Sectoral Solutions",
+        "subtitle": "Design and production solutions for various sectors from telecommunications to aviation."
+    },
+    "services": [
+        {
+            "sector": "Telecommunications Sector",
+            "items": [
+                "Outdoor cabinets",
+                "Lampost cabinets",
+                "Kiosks (standing - hanging)"
+            ]
+        },
+        {
+            "sector": "Aviation",
+            "items": [
+                "Galley interior part production",
+                "Machining"
+            ]
+        },
+        {
+            "sector": "Military",
+            "items": [
+                "Carrying cases",
+                "Field cases"
+            ]
+        },
+        {
+            "sector": "Retail",
+            "items": [
+                "Cash register holders",
+                "POS holders",
+                "Pipe construction assembly parts"
+            ]
+        },
+        {
+            "sector": "Electronics",
+            "items": [
+                "Electronic fixture card design and manufacturing"
+            ]
+        }
+    ],
+    "rd": {
+        "title": "R&D STUDIES",
+        "items": [
+            "R&D study on cash register-POS holders for the retail sector",
+            "R&D study on fixture card designs for the electronics sector"
+        ]
+    }
+}

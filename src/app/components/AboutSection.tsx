@@ -120,16 +120,16 @@ export default function AboutSection() {
       </div>
 
       {/* Alt paragraf + Resim */}
-      <div className="max-w-7xl mx-auto mt-24 grid grid-cols-1 md:grid-cols-2 gap-12 px-6">
-        {/* Örnek Resim */}
+      <div className="max-w-7xl mx-auto mt-24 grid grid-cols-1 md:grid-cols-2 gap-12 px-6 items-center">
+        {/* Şirket Görseli */}
         <img
-          src="/factory.jpg"
-          alt="factory"
-          className="rounded-lg shadow-lg w-[70%] mx-auto"
+          src="/emof-poster.png"
+          alt="EMOF Teknoloji"
+          className="rounded-lg shadow-2xl w-full md:w-[60%] mx-auto hover:scale-105 transition-transform duration-500"
         />
 
         {/* Metin */}
-        <p className="text-gray-300 leading-relaxed text-lg">
+        <p className="text-gray-300 leading-relaxed text-lg text-center md:text-left">
           {t("home.about.body")}
         </p>
       </div>

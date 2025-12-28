@@ -51,5 +51,48 @@
       "name": "Prototype Fuselage Panels",
       "detail": "Low-volume, high-precision fuselage prototype parts for new platforms."
     }
+  ],
+  "referencesTitle": "Our References",
+  "referencesList": [
+    {
+      "name": "NETAS",
+      "image": "/references/netas.png",
+      "description": "Turkey's leading telecommunications and information technologies company."
+    },
+    {
+      "name": "Encore",
+      "image": "/references/encore.png",
+      "description": "Strategic partner offering high-tech solutions."
+    },
+    {
+      "name": "Audio Electronics",
+      "image": "/references/audio.png",
+      "description": "Leading manufacturer in building communication and security systems."
+    },
+    {
+      "name": "TCI Cabin Interior",
+      "image": "/references/tci.png",
+      "description": "Global brand in aircraft cabin interior systems design and manufacturing."
+    },
+    {
+      "name": "Profilo Payment Systems",
+      "image": "/references/profilo.png",
+      "description": "Payment recording devices and electronic solutions."
+    },
+    {
+      "name": "Penta Electronics",
+      "image": "/references/penta.png",
+      "description": "Electronic manufacturing and supply chain services."
+    },
+    {
+      "name": "Pointek",
+      "image": "/references/pointek.png",
+      "description": "Industrial automation and software solutions."
+    },
+    {
+      "name": "CRC Power Solution",
+      "image": "/references/crc.png",
+      "description": "Innovative solutions in energy and power systems."
+    }
   ]
 }

@@ -1,23 +1,16 @@
 {
   "header": {
-    "label": "OUR QUALITY POLICIES",
-    "titleMain": "Aviation Manufacturing at",
-    "titleHighlight": " International Standards",
-    "intro": "EMOF Teknoloji adopts flight safety, quality, and occupational safety as priorities at every stage of its production. All our processes comply with AS9100, ISO 9001, and ISO 45001 standards."
+    "label": "CORPORATE",
+    "titleMain": "OUR QUALITY",
+    "titleHighlight": " POLICY",
+    "intro": "Our quality approach focused on customer satisfaction and continuous improvement."
   },
-  "blocks": [
-    {
-      "title": "• Quality Management System",
-      "body": "Our production processes are designed according to the AS9100 quality standard, and part traceability, process control, and documentation management are executed at the highest level."
-    },
-    {
-      "title": "• Occupational Safety & Environmental Policy",
-      "body": "Employee health, environmental safety, and legal compliance are fundamental priorities in all our operations. We act with sustainable production principles."
-    },
-    {
-      "title": "• Continuous Improvement",
-      "body": "EMOF Teknoloji continuously improves quality and production efficiency by increasing R&D and modernization investments every year."
-    }
+  "policyItems": [
+    "As Emof Teknoloji, to ensure continuous improvement with an innovative service approach that is fast, high quality, and closely follows technology in its sector,",
+    "To analyze our customers' expectations and requirements well, to provide the most effective and creative solutions to these expectations and requirements, cost-effectively, on time and quickly, ensuring customer satisfaction and trust,",
+    "To comply with legal regulations and statutory requirements,",
+    "To ensure the continuous development of all our employees with the help of necessary information and training, and to ensure that they achieve their unit and organizational goals,",
+    "To ensure that our quality management system is documented to fulfill the requirements of the ISO 9001 standard, that its risks and opportunities are determined, kept up-to-date, and continuously improved"
   ],
   "standards": {
     "title": "Applied Standards",

@@ -24,19 +24,19 @@
     ]
   },
   "about": {
-    "title": "ABOUT US",
-    "intro": "EMOF Teknoloji is an engineering company specializing in high-precision CNC manufacturing processes for the aviation and defense industries. With innovative manufacturing techniques and a strong engineering infrastructure, we provide reliable, high-quality, and sustainable solutions to our customers.",
+    "title": "COMPANY PROFILE",
+    "intro": "Emof Teknoloji was established in 2008 by Gökhan Emrah OFLAZ under the name Emof Metal. Starting its operations with telecommunication projects, the company has expanded since 2015 to manufacture sheet metal and machined parts for the aviation sector, as well as carrying cases with special damping mounts for military projects.",
     "stats": {
       "employees": {
-        "value": "50+",
+        "value": "12",
         "label": "Employees"
       },
       "capacity": {
-        "value": "250,000+",
+        "value": "50,000+",
         "label": "Annual Production Capacity"
       },
       "facility": {
-        "value": "5,000 m²",
+        "value": "1,000 m²",
         "label": "Facility Area"
       },
       "programs": {
@@ -44,6 +44,6 @@
         "label": "Active Programs"
       }
     },
-    "body": "Thanks to modern production machinery, a competent engineering team, and quality-oriented process management, EMOF Teknoloji reliably manufactures the high-precision parts needed by the aviation sector. Adopting an approach of excellence in all steps from design to prototype, and from mass production to quality control processes, we have achieved a strong position as a solution partner in the industry."
+    "body": "In 2017, the company rebranded from Emof Metal to Emof Teknoloji. It provides design, production, and assembly services tailored to the needs of various sectors. In 2019, the manufacturing of pipe construction assembly parts for the retail sector was added to its portfolio."
   }
 }

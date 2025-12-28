@@ -57,28 +57,39 @@
   "machinesTitle": "Machine Park Examples",
   "machines": [
     {
-      "name": "5-Axis Vertical Machining Center",
-      "type": "High-precision, fully enclosed cabin",
-      "travel": "X: 800 mm • Y: 600 mm • Z: 500 mm",
-      "notes": "Suitable for aviation structural parts and complex geometries."
+      "name": "3 Axis CNC Milling",
+      "type": "Yuntes JHV-800",
+      "travel": "Precision Machining Capacity",
+      "notes": "Mass production and mold machining operations.",
+      "image": "/machines/cnc-freze.png"
     },
     {
-      "name": "3-Axis Vertical Machining Center",
-      "type": "Mass production-oriented vertical machining center",
-      "travel": "X: 1,200 mm • Y: 600 mm • Z: 500 mm",
-      "notes": "For medium-large sized fuselage and bracket parts."
+      "name": "NC Press Brake",
+      "type": "Cemax - 1250 mm",
+      "travel": "1250 mm Bending Length",
+      "notes": "Precision sheet metal bending operations.",
+      "image": "/machines/nc-abkant.png"
     },
     {
-      "name": "CNC Turning Center",
-      "type": "CNC turning for shafts, rings, and rotational parts",
-      "travel": "Dia: 300 mm • Length: 600 mm",
-      "notes": "Ideal for fasteners and flange-type parts."
+      "name": "CNC Press Brake",
+      "type": "MVD - 3000 mm / 135 Ton",
+      "travel": "3000 mm Bending / 135 Ton Pressure",
+      "notes": "Large-scale and heavy-tonnage bending tasks.",
+      "image": "/machines/cnc-abkant.png"
     },
     {
-      "name": "3D CMM Measurement Device",
-      "type": "Fully automatic coordinate measuring machine",
-      "travel": "X: 700 mm • Y: 600 mm • Z: 500 mm",
-      "notes": "Reported, traceable measurement capability for critical dimensions."
+      "name": "Eccentric Press",
+      "type": "80 Ton Capacity",
+      "travel": "Cutting and Forming",
+      "notes": "Mass production sheet metal part manufacturing.",
+      "image": "/machines/pres.png"
+    },
+    {
+      "name": "Welding Workshop",
+      "type": "TIG and MIG Welding",
+      "travel": "Professional Welding Support",
+      "notes": "Aluminum and steel welded manufacturing solutions.",
+      "image": "/machines/kaynak.png"
     }
   ],
   "cta": {

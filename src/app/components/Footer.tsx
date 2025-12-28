@@ -23,9 +23,7 @@ export default function Footer() {
         {/* LOGO + YAZI */}
         <div>
           <h3 className="text-3xl font-extrabold text-white mb-3 select-none">
-            {data.brand.name} <span className="bg-gradient-to-r
-              from-blue-400 via-blue-500 to-cyan-400
-              bg-clip-text text-transparent">{data.brand.highlight}</span>
+            {data.brand.name} <span className="bg-gradient-to-r from-blue-400 via-blue-500 to-cyan-400 bg-clip-text text-transparent">{data.brand.highlight}</span>
           </h3>
           <p className="text-sm text-slate-400 leading-relaxed">
             {data.brand.description}
@@ -69,22 +67,8 @@ export default function Footer() {
           </ul>
         </div>
 
-        {/* SERTİFİKALAR */}
-        <div>
-          <h4 className="text-white font-semibold mb-4">
-            {data.certificates.title}
-          </h4>
-          <div className="flex flex-col gap-3 opacity-80">
-            {data.certificates.items.map((cert) => (
-              <img
-                key={cert.src}
-                src={cert.src}
-                alt={cert.alt}
-                className="w-32"
-              />
-            ))}
-          </div>
-        </div>
+
+
       </div>
 
       {/* SOCIAL & COPYRIGHT */}

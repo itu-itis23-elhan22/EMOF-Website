@@ -6,65 +6,46 @@
   },
   "items": [
     {
-      "name": "Airframe Components",
-      "code": "AERO-STRUCT",
-      "desc": "High-precision CNC machining for fuselage and structural components."
+      "name": "Telecom Outdoor Cabinet",
+      "code": "OUT-CAB-TEL",
+      "desc": "Durable outdoor cabinet solution for telecommunication infrastructure.",
+      "image": "/products/telekom-kabin.png"
     },
     {
-      "name": "Titanium Fasteners",
-      "code": "TI-FAST",
-      "desc": "Lightweight and high-strength titanium fasteners."
+      "name": "Pole Type Outdoor Cabinet",
+      "code": "POLE-CAB",
+      "desc": "Compact outdoor cabinet suitable for pole mounting.",
+      "image": "/products/direk-kabin.png"
     },
     {
-      "name": "CNC Machined Prototypes",
-      "code": "CNC-PROT",
-      "desc": "Low-volume, rapid prototype production for R&D projects."
+      "name": "Cash Register Kiosk",
+      "code": "KIOSK-POS",
+      "desc": "Durable and stylish cash register kiosk cabinet.",
+      "image": "/products/kiosk.png"
     },
     {
-      "name": "Engine Components",
-      "code": "ENG-PARTS",
-      "desc": "Engine parts resistant to thermal and mechanical loads."
+      "name": "Outdoor Cabinet Inner Detail",
+      "code": "CAB-DETAIL",
+      "desc": "Interior assembly, shelving, and cabling details.",
+      "image": "/products/kabin-detay.png"
     },
     {
-      "name": "Shell & Bracket Parts",
-      "code": "BRKT-SHELL",
-      "desc": "Mounting brackets and support elements."
+      "name": "Kiosk General Views",
+      "code": "KIOSK-GEN",
+      "desc": "General views of kiosk systems from different angles.",
+      "image": "/products/kiosk-genel.png"
     },
     {
-      "name": "Custom Project Parts",
-      "code": "CUSTOM",
-      "desc": "Custom part production according to customer drawings."
+      "name": "Aircraft Cabin Interior Parts",
+      "code": "AERO-INT",
+      "desc": "Various aluminum and stainless steel parts machined with CNC milling.",
+      "image": "/products/ucak-kabin.png"
     },
-  {
-    "name": "Landing Gear Components",
-    "code": "LND-GEAR",
-    "desc": "High-strength machined parts used in aircraft landing gears."
-  },
-  {
-    "name": "Composite Mold Elements",
-    "code": "CMP-MOLD",
-    "desc": "Mold parts with precision surfaces for composite production processes."
-  },
-  {
-    "name": "Fuel System Parts",
-    "code": "FUEL-SYS",
-    "desc": "Precision machined fittings ensuring fuel flow and safety."
-  },
-  {
-    "name": "Hydraulic System Components",
-    "code": "HYDRO-PART",
-    "desc": "Parts focused on sealing and durability for hydraulic control units."
-  },
-  {
-    "name": "Electronic Box & Enclosure Parts",
-    "code": "ELEC-HOUS",
-    "desc": "Protective aluminum enclosure parts for aviation electronics (avionics)."
-  },
-  {
-    "name": "Helicopter Airframe Connection Elements",
-    "code": "HELI-FAST",
-    "desc": "Connection and load-bearing elements used in helicopter structures."
-  }
-
+    {
+      "name": "Monitor and POS Stands",
+      "code": "POS-STAND",
+      "desc": "Design and assembly parts for various monitor and POS device stands.",
+      "image": "/products/pos-stand.png"
+    }
   ]
 }

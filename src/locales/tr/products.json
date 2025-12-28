@@ -6,63 +6,46 @@
   },
   "items": [
     {
-      "name": "Uçak Gövde Parçaları",
-      "code": "AERO-STRUCT",
-      "desc": "Gövde ve konstrüksiyon bileşenleri için yüksek hassasiyetli CNC işleme."
+      "name": "Telekom Dış Ortam Kabini",
+      "code": "OUT-CAB-TEL",
+      "desc": "Telekomünikasyon altyapısı için dayanıklı dış ortam kabin çözümü.",
+      "image": "/products/telekom-kabin.png"
     },
     {
-      "name": "Titanyum Bağlantı Elemanları",
-      "code": "TI-FAST",
-      "desc": "Hafif ve yüksek mukavemetli titanyum bağlantı elemanları."
+      "name": "Direk Tip Dış Ortam Kabini",
+      "code": "POLE-CAB",
+      "desc": "Direk montajına uygun, kompakt dış ortam kabini.",
+      "image": "/products/direk-kabin.png"
     },
     {
-      "name": "CNC İşlenmiş Prototipler",
-      "code": "CNC-PROT",
-      "desc": "Ar-Ge projeleri için düşük adetli, hızlı prototip üretimi."
+      "name": "Yazar Kasa Kiosk",
+      "code": "KIOSK-POS",
+      "desc": "Dayanıklı ve şık tasarımlı yazar kasa kiosk kabini.",
+      "image": "/products/kiosk.png"
     },
     {
-      "name": "Motor Bileşenleri",
-      "code": "ENG-PARTS",
-      "desc": "Isıl ve mekanik yüke dayanıklı motor parçaları."
+      "name": "Dış Ortam Kabini İç Detay",
+      "code": "CAB-DETAIL",
+      "desc": "Kabin içi montaj, raf ve kablolama detayları.",
+      "image": "/products/kabin-detay.png"
     },
     {
-      "name": "Kabuk & Braket Parçalar",
-      "code": "BRKT-SHELL",
-      "desc": "Montaj braketleri ve destek elemanları."
+      "name": "Yazar Kasa Genel Görünüşler",
+      "code": "KIOSK-GEN",
+      "desc": "Kiosk sistemlerinin farklı açılardan genel görünümü.",
+      "image": "/products/kiosk-genel.png"
     },
     {
-      "name": "Özel Proje Parçaları",
-      "code": "CUSTOM",
-      "desc": "Müşteri çizimlerine göre özel parça üretimi."
-    },{
-      "name": "İniş Takımı Bileşenleri",
-      "code": "LND-GEAR",
-      "desc": "Uçak iniş takımlarında kullanılan yüksek dayanımlı işlenmiş parçalar."
+      "name": "Uçak Kabin İçi Parçalar",
+      "code": "AERO-INT",
+      "desc": "Alüminyum ve paslanmaz malzemeden CNC freze ile işlenen muhtelif parçalar.",
+      "image": "/products/ucak-kabin.png"
     },
     {
-      "name": "Kompozit Kalıp Elemanları",
-      "code": "CMP-MOLD",
-      "desc": "Kompozit üretim süreçleri için hassas yüzeyli kalıp parçaları."
-    },
-    {
-      "name": "Yakıt Sistemi Parçaları",
-      "code": "FUEL-SYS",
-      "desc": "Yakıt akışı ve güvenliğini sağlayan hassas işlenmiş bağlantı parçaları."
-    },
-    {
-      "name": "Hidrolik Sistem Bileşenleri",
-      "code": "HYDRO-PART",
-      "desc": "Hidrolik kontrol üniteleri için sızdırmazlık ve dayanım odaklı parçalar."
-    },
-    {
-      "name": "Elektronik Kutu & Muhafaza Parçaları",
-      "code": "ELEC-HOUS",
-      "desc": "Havacılık elektroniği için koruyucu alüminyum muhafaza parçaları."
-    },
-    {
-      "name": "Helikopter Gövde Bağlantı Elemanları",
-      "code": "HELI-FAST",
-      "desc": "Helikopter yapılarında kullanılan bağlantı ve taşıyıcı elemanlar."
+      "name": "Monitör ve POS Stantları",
+      "code": "POS-STAND",
+      "desc": "Muhtelif monitör ve POS cihazı stantları için tasarım ve montaj parçaları.",
+      "image": "/products/pos-stand.png"
     }
   ]
 }

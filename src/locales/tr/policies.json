@@ -1,23 +1,16 @@
 {
   "header": {
-    "label": "KALİTE POLİTİKALARIMIZ",
-    "titleMain": "Uluslararası Standartlarda",
-    "titleHighlight": " Havacılık Üretimi",
-    "intro": "EMOF Teknoloji, üretiminin her aşamasında uçuş güvenliğini, kaliteyi ve iş güvenliğini öncelik olarak benimser. Tüm süreçlerimiz AS9100, ISO 9001 ve ISO 45001 standartlarıyla uyumludur."
+    "label": "KURUMSAL",
+    "titleMain": "KALİTE",
+    "titleHighlight": " POLİTİKAMIZ",
+    "intro": "Müşteri memnuniyeti ve sürekli gelişim odaklı kalite yaklaşımımız."
   },
-  "blocks": [
-    {
-      "title": "• Kalite Yönetim Sistemi",
-      "body": "Üretim süreçlerimiz AS9100 kalite standardına göre tasarlanmış olup, parça izlenebilirliği, proses kontrolü ve dokümantasyon yönetimi en üst seviyede yürütülür."
-    },
-    {
-      "title": "• İş Güvenliği & Çevre Politikası",
-      "body": "Tüm operasyonlarımızda çalışan sağlığı, çevre güvenliği ve yasal uyumluluk temel önceliktir. Sürdürülebilir üretim prensipleriyle hareket ederiz."
-    },
-    {
-      "title": "• Sürekli Gelişim",
-      "body": "EMOF Teknoloji, her yıl Ar-Ge ve modernizasyon yatırımlarını artırarak kalite ve üretim verimliliğini sürekli olarak geliştirir."
-    }
+  "policyItems": [
+    "Emof Teknoloji olarak, kendi sektöründe hızlı, kaliteli ve teknolojiyi yakından takip eden yenilikçi bir hizmet anlayışı ile sürekli gelişmeyi sağlamak,",
+    "Müşterilerimizin beklenti ve gereksinimlerini iyi analiz etmek, bu beklenti ve gereksinimlere en etkin ve yaratıcı çözümleri, uygun maliyetle, zamanında ve hızlı gerçekleştirip müşteri memnuniyetini ve güvenini sağlamak,",
+    "Kanuni mevzuat ve yasal şartlara uymak,",
+    "Tüm çalışanlarımızın gerekli bilgilendirme ve eğitimler yardımıyla sürekli gelişimini sağlamak ve kendi birimleri ve kuruluş amaçlarına ulaşmayı sağlamak,",
+    "Kalite yönetim sistemimizin ISO 9001 standardının gereklerini yerine getirecek şekilde dokümante edilmesi, risk ve fırsatlarını belirlenmesini-güncel tutulmasını ve sürekli iyileştirilmesini sağlamak"
   ],
   "standards": {
     "title": "Uygulanan Standartlar",
